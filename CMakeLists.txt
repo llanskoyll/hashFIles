@@ -4,12 +4,14 @@ project(test_task)
 
 set(SOURCES
   main.cpp
+  jsonReader.cpp
 )
-# set(HEADER
-#
-# )
+set(HEADERS
+  jsonReader.h
+  json.hpp
+)
 
-add_executable(App ${SOURCES})
+add_executable(App ${SOURCES} ${HEADERS})
 
 set_target_properties( ## свойства к проекту
   App PROPERTIES ##

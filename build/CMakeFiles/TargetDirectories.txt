@@ -1,0 +1,3 @@
+/home/artem/Рабочий стол/project/test_task/build/CMakeFiles/rebuild_cache.dir
+/home/artem/Рабочий стол/project/test_task/build/CMakeFiles/edit_cache.dir
+/home/artem/Рабочий стол/project/test_task/build/CMakeFiles/App.dir
