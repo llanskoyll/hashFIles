@@ -1,5 +1,4 @@
 #include "jsonReader.h"
-#include "Error.h"
 #include <sstream>
 
 // Чтение из JSON
@@ -14,6 +13,6 @@ void readJSON(std::string &pathJSON, std::vector<std::string> &pathFiles) {
     }
     file.close();
   } else {
-    throw 1;
+    error("Не удалось открыть файл!");
   }
 }

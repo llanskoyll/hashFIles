@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "App"
   "App.pdb"
+  "CMakeFiles/App.dir/TrappingError.cpp.o"
   "CMakeFiles/App.dir/hash.cpp.o"
   "CMakeFiles/App.dir/jsonReader.cpp.o"
   "CMakeFiles/App.dir/main.cpp.o"

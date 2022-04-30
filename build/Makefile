@@ -123,6 +123,33 @@ App/fast:
 	$(MAKE) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/build
 .PHONY : App/fast
 
+TrappingError.o: TrappingError.cpp.o
+
+.PHONY : TrappingError.o
+
+# target to build an object file
+TrappingError.cpp.o:
+	$(MAKE) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/TrappingError.cpp.o
+.PHONY : TrappingError.cpp.o
+
+TrappingError.i: TrappingError.cpp.i
+
+.PHONY : TrappingError.i
+
+# target to preprocess a source file
+TrappingError.cpp.i:
+	$(MAKE) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/TrappingError.cpp.i
+.PHONY : TrappingError.cpp.i
+
+TrappingError.s: TrappingError.cpp.s
+
+.PHONY : TrappingError.s
+
+# target to generate assembly for a file
+TrappingError.cpp.s:
+	$(MAKE) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/TrappingError.cpp.s
+.PHONY : TrappingError.cpp.s
+
 hash.o: hash.cpp.o
 
 .PHONY : hash.o
@@ -213,6 +240,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... App"
+	@echo "... TrappingError.o"
+	@echo "... TrappingError.i"
+	@echo "... TrappingError.s"
 	@echo "... hash.o"
 	@echo "... hash.i"
 	@echo "... hash.s"

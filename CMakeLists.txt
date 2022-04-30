@@ -6,11 +6,13 @@ set(SOURCES
   main.cpp
   jsonReader.cpp
   hash.cpp
+  TrappingError.cpp
 )
 set(HEADERS
   jsonReader.h
   json.hpp
   hash.h
+  TrappingError.h
 )
 
 add_executable(App ${SOURCES} ${HEADERS})

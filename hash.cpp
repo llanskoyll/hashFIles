@@ -1,11 +1,13 @@
 #include "hash.h"
 
-
-// Чтение из файла
 void hashCalc(std::vector<std::string> &pathFiles,std::map <std::string, unsigned int> &fileMp)
 {
   for(int i = 0; i < pathFiles.size(); i++) {
-    fileMp[split(pathFiles[i],'/')] = CRC32_count(pathFiles[i]);
+    std::string name = split(pathFiles[i],'/');
+    fileMp[name] = CRC32_count(pathFiles[i]);
+    if(fileMp[name] == 0) {
+      error("Неверный указанный файл либо путь для хэширования!");
+    }
   }
   pathFiles.clear();
 }

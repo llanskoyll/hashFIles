@@ -1,3 +1,4 @@
+#include "TrappingError.h"
 #include <iostream>
 #include <vector>
 #include <fstream>
