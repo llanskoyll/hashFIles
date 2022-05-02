@@ -1,10 +1,12 @@
 file(REMOVE_RECURSE
   "App"
   "App.pdb"
+  "CMakeFiles/App.dir/error.cpp.o"
+  "CMakeFiles/App.dir/fileInfo.cpp.o"
   "CMakeFiles/App.dir/hash.cpp.o"
   "CMakeFiles/App.dir/jsonReader.cpp.o"
   "CMakeFiles/App.dir/main.cpp.o"
-  "CMakeFiles/App.dir/trappingError.cpp.o"
+  "CMakeFiles/App.dir/print.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.

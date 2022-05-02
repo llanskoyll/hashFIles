@@ -1,6 +1,8 @@
 #include "jsonReader.h"
 #include "hash.h"
-#include "trappingError.h"
+#include "fileInfo.h"
+#include "error.h"
+#include "print.h"
 
 #include <map>
 #include <vector>
@@ -8,27 +10,18 @@
 #include <thread>
 
 int main(int argc, char* argv[]) {
-  if(argc < 3) {
+  if(argc < 4) {
     std::string pathJSON = argv[1];
-    std::vector<std::string> pathFiles;
-    std::map <std::string, unsigned int> fileMp;
-    readJSON(pathJSON,pathFiles);
+    unsigned short int countThread = std::stoi(argv[2]);
 
-    std::vector <std::thread> th_vec;
-    for(int i = 0; i < pathFiles.size(); i++) {
-      th_vec.push_back(std::thread(hashCalc,std::ref(pathFiles[i]),std::ref(fileMp)));
-    }
-    for(int i = 0; i < th_vec.size(); i++) {
-      th_vec.at(i).join();
-    }
-    // hashCalc(pathFiles,fileMp);
-    for(auto& item: fileMp) {
-      std::cout << "File name: " << "\t" << item.first << "\t";
-      std::cout << " File hash: "  << "\t" << item.second  << std::endl;
-      std::cout << "-------------------------------------------------------" << std::endl;
-    }
+    if(std::thread::hardware_concurrency() < countThread) setError("количество потоков не соответствует системе");
+    std::vector <fileInfo> file_vec;
+
+    readJSON(pathJSON,file_vec);
+    hashCalc(file_vec,countThread);
+    printInfoFile(file_vec);
   } else {
-    error("Большое количество аргументов!");
+    setError("большое количество аргументов");
   }
   return 0;
 }

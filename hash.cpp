@@ -1,30 +1,16 @@
 #include "hash.h"
 
-// void hashCalc(std::vector<std::string> &pathFiles,std::map <std::string, unsigned int> &fileMp)
-// {
-//   for(int i = 0; i < pathFiles.size(); i++) {
-//     std::string name = split(pathFiles[i],'/');
-//     unsigned int cnt = 0;
-//     CRC32_count(pathFiles[i],cnt);
-//     fileMp[name] = cnt;
-//     if(fileMp[name] == 0) {
-//       error("Неверный указанный файл либо путь для хэширования!");
-//     }
-//   }
-//   pathFiles.clear();
-// }
-
-void hashCalc(std::string &pathFiles,std::map <std::string, unsigned int> &fileMp) {
-    std::cout << std::this_thread::get_id() << std::endl;
-    std::string name = split(pathFiles,'/');
-    unsigned int cnt = 0;
-    CRC32_count(pathFiles,cnt);
-    fileMp[name] = cnt;
-    if(fileMp[name] == 0) {
-      error("Неверный указанный файл либо путь для хэширования!");
-    }
+void hashCalc(std::vector <fileInfo> &file_vec, unsigned short int &countThread) {
+	if(countThread >= file_vec.size()) {
+		std::vector <std::thread> th_vec;
+		for(int i = 0; i < file_vec.size(); i++) {
+			th_vec.push_back(std::thread(CRC32_count,std::ref(file_vec[i])));
+		}
+		for(int i = 0; i < th_vec.size(); i++) {
+			th_vec.at(i).join();
+		}
+	}
 }
-
 unsigned int CRC32_function(unsigned char *buf, unsigned long len)
 {
 	unsigned long crc_table[256];
@@ -42,32 +28,17 @@ unsigned int CRC32_function(unsigned char *buf, unsigned long len)
 	return crc ^ 0xFFFFFFFFUL;
 }
 
-//возвращание конечного CRC32. Достаточно вызвать эту функцию и указать имя файла, для которого будет произведён расчёт
-void CRC32_count(std::string &filename, unsigned int &cnt)
+void CRC32_count(fileInfo &file)
 {
+	std::string filename = file.getPath();
 	char buf[4096*64]; //сколько символов в файле, на самом деле, это должно быть больше, 2^31-1 будет для файла размером 2ГБ
 	std::ifstream f (filename,std::ios::binary);
 
 	f.read(buf,4096*64);
+	unsigned int cnt = 0;
 	cnt = CRC32_function((unsigned char*)buf, f.gcount());
-}
-
-std::string split(const std::string &str, char sym) {
-
-   std::vector<std::string> result; // результат
-   int length_str = str.length();
-   if (!str.empty()) { // Проверка на пустое строку
-        std::string count = "";
-        for(int i = 0; i < length_str; i++) {
-            if(str[i] == sym) {
-                result.push_back(count);
-                count = "";
-            } else {
-                count += str[i];
-            }
-        }
-        result.push_back(count);
-    }
-    std::string len = result[result.size() - 1];
-    return len;
+	if(cnt == 0) {
+		setError("не удалось считать хэш файла");
+	}
+	file.setHash(cnt);
 }

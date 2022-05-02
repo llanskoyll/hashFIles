@@ -123,6 +123,60 @@ App/fast:
 	$(MAKE) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/build
 .PHONY : App/fast
 
+error.o: error.cpp.o
+
+.PHONY : error.o
+
+# target to build an object file
+error.cpp.o:
+	$(MAKE) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/error.cpp.o
+.PHONY : error.cpp.o
+
+error.i: error.cpp.i
+
+.PHONY : error.i
+
+# target to preprocess a source file
+error.cpp.i:
+	$(MAKE) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/error.cpp.i
+.PHONY : error.cpp.i
+
+error.s: error.cpp.s
+
+.PHONY : error.s
+
+# target to generate assembly for a file
+error.cpp.s:
+	$(MAKE) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/error.cpp.s
+.PHONY : error.cpp.s
+
+fileInfo.o: fileInfo.cpp.o
+
+.PHONY : fileInfo.o
+
+# target to build an object file
+fileInfo.cpp.o:
+	$(MAKE) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/fileInfo.cpp.o
+.PHONY : fileInfo.cpp.o
+
+fileInfo.i: fileInfo.cpp.i
+
+.PHONY : fileInfo.i
+
+# target to preprocess a source file
+fileInfo.cpp.i:
+	$(MAKE) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/fileInfo.cpp.i
+.PHONY : fileInfo.cpp.i
+
+fileInfo.s: fileInfo.cpp.s
+
+.PHONY : fileInfo.s
+
+# target to generate assembly for a file
+fileInfo.cpp.s:
+	$(MAKE) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/fileInfo.cpp.s
+.PHONY : fileInfo.cpp.s
+
 hash.o: hash.cpp.o
 
 .PHONY : hash.o
@@ -204,32 +258,32 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-trappingError.o: trappingError.cpp.o
+print.o: print.cpp.o
 
-.PHONY : trappingError.o
+.PHONY : print.o
 
 # target to build an object file
-trappingError.cpp.o:
-	$(MAKE) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/trappingError.cpp.o
-.PHONY : trappingError.cpp.o
+print.cpp.o:
+	$(MAKE) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/print.cpp.o
+.PHONY : print.cpp.o
 
-trappingError.i: trappingError.cpp.i
+print.i: print.cpp.i
 
-.PHONY : trappingError.i
+.PHONY : print.i
 
 # target to preprocess a source file
-trappingError.cpp.i:
-	$(MAKE) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/trappingError.cpp.i
-.PHONY : trappingError.cpp.i
+print.cpp.i:
+	$(MAKE) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/print.cpp.i
+.PHONY : print.cpp.i
 
-trappingError.s: trappingError.cpp.s
+print.s: print.cpp.s
 
-.PHONY : trappingError.s
+.PHONY : print.s
 
 # target to generate assembly for a file
-trappingError.cpp.s:
-	$(MAKE) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/trappingError.cpp.s
-.PHONY : trappingError.cpp.s
+print.cpp.s:
+	$(MAKE) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/print.cpp.s
+.PHONY : print.cpp.s
 
 # Help Target
 help:
@@ -240,6 +294,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... App"
+	@echo "... error.o"
+	@echo "... error.i"
+	@echo "... error.s"
+	@echo "... fileInfo.o"
+	@echo "... fileInfo.i"
+	@echo "... fileInfo.s"
 	@echo "... hash.o"
 	@echo "... hash.i"
 	@echo "... hash.s"
@@ -249,9 +309,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... trappingError.o"
-	@echo "... trappingError.i"
-	@echo "... trappingError.s"
+	@echo "... print.o"
+	@echo "... print.i"
+	@echo "... print.s"
 .PHONY : help
 
 

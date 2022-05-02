@@ -96,25 +96,53 @@ CMakeFiles/App.dir/hash.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/App.dir/hash.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/artem/Рабочий стол/project/test_task/hash.cpp" -o CMakeFiles/App.dir/hash.cpp.s
 
-CMakeFiles/App.dir/trappingError.cpp.o: CMakeFiles/App.dir/flags.make
-CMakeFiles/App.dir/trappingError.cpp.o: ../trappingError.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/artem/Рабочий стол/project/test_task/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/App.dir/trappingError.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/App.dir/trappingError.cpp.o -c "/home/artem/Рабочий стол/project/test_task/trappingError.cpp"
+CMakeFiles/App.dir/error.cpp.o: CMakeFiles/App.dir/flags.make
+CMakeFiles/App.dir/error.cpp.o: ../error.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/artem/Рабочий стол/project/test_task/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/App.dir/error.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/App.dir/error.cpp.o -c "/home/artem/Рабочий стол/project/test_task/error.cpp"
 
-CMakeFiles/App.dir/trappingError.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/App.dir/trappingError.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/artem/Рабочий стол/project/test_task/trappingError.cpp" > CMakeFiles/App.dir/trappingError.cpp.i
+CMakeFiles/App.dir/error.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/App.dir/error.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/artem/Рабочий стол/project/test_task/error.cpp" > CMakeFiles/App.dir/error.cpp.i
 
-CMakeFiles/App.dir/trappingError.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/App.dir/trappingError.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/artem/Рабочий стол/project/test_task/trappingError.cpp" -o CMakeFiles/App.dir/trappingError.cpp.s
+CMakeFiles/App.dir/error.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/App.dir/error.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/artem/Рабочий стол/project/test_task/error.cpp" -o CMakeFiles/App.dir/error.cpp.s
+
+CMakeFiles/App.dir/fileInfo.cpp.o: CMakeFiles/App.dir/flags.make
+CMakeFiles/App.dir/fileInfo.cpp.o: ../fileInfo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/artem/Рабочий стол/project/test_task/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/App.dir/fileInfo.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/App.dir/fileInfo.cpp.o -c "/home/artem/Рабочий стол/project/test_task/fileInfo.cpp"
+
+CMakeFiles/App.dir/fileInfo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/App.dir/fileInfo.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/artem/Рабочий стол/project/test_task/fileInfo.cpp" > CMakeFiles/App.dir/fileInfo.cpp.i
+
+CMakeFiles/App.dir/fileInfo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/App.dir/fileInfo.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/artem/Рабочий стол/project/test_task/fileInfo.cpp" -o CMakeFiles/App.dir/fileInfo.cpp.s
+
+CMakeFiles/App.dir/print.cpp.o: CMakeFiles/App.dir/flags.make
+CMakeFiles/App.dir/print.cpp.o: ../print.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/artem/Рабочий стол/project/test_task/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/App.dir/print.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/App.dir/print.cpp.o -c "/home/artem/Рабочий стол/project/test_task/print.cpp"
+
+CMakeFiles/App.dir/print.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/App.dir/print.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/artem/Рабочий стол/project/test_task/print.cpp" > CMakeFiles/App.dir/print.cpp.i
+
+CMakeFiles/App.dir/print.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/App.dir/print.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/artem/Рабочий стол/project/test_task/print.cpp" -o CMakeFiles/App.dir/print.cpp.s
 
 # Object files for target App
 App_OBJECTS = \
 "CMakeFiles/App.dir/main.cpp.o" \
 "CMakeFiles/App.dir/jsonReader.cpp.o" \
 "CMakeFiles/App.dir/hash.cpp.o" \
-"CMakeFiles/App.dir/trappingError.cpp.o"
+"CMakeFiles/App.dir/error.cpp.o" \
+"CMakeFiles/App.dir/fileInfo.cpp.o" \
+"CMakeFiles/App.dir/print.cpp.o"
 
 # External object files for target App
 App_EXTERNAL_OBJECTS =
@@ -122,10 +150,12 @@ App_EXTERNAL_OBJECTS =
 App: CMakeFiles/App.dir/main.cpp.o
 App: CMakeFiles/App.dir/jsonReader.cpp.o
 App: CMakeFiles/App.dir/hash.cpp.o
-App: CMakeFiles/App.dir/trappingError.cpp.o
+App: CMakeFiles/App.dir/error.cpp.o
+App: CMakeFiles/App.dir/fileInfo.cpp.o
+App: CMakeFiles/App.dir/print.cpp.o
 App: CMakeFiles/App.dir/build.make
 App: CMakeFiles/App.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/artem/Рабочий стол/project/test_task/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable App"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/artem/Рабочий стол/project/test_task/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable App"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/App.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
