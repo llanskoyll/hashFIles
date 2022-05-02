@@ -1,1 +1,1 @@
-/usr/bin/c++    -rdynamic CMakeFiles/App.dir/main.cpp.o CMakeFiles/App.dir/jsonReader.cpp.o CMakeFiles/App.dir/hash.cpp.o CMakeFiles/App.dir/TrappingError.cpp.o  -o App 
+/usr/bin/c++  -std=c++11 -pthread  -rdynamic CMakeFiles/App.dir/main.cpp.o CMakeFiles/App.dir/jsonReader.cpp.o CMakeFiles/App.dir/hash.cpp.o CMakeFiles/App.dir/trappingError.cpp.o  -o App  -lpthread 

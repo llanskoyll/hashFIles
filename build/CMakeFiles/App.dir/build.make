@@ -96,25 +96,25 @@ CMakeFiles/App.dir/hash.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/App.dir/hash.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/artem/Рабочий стол/project/test_task/hash.cpp" -o CMakeFiles/App.dir/hash.cpp.s
 
-CMakeFiles/App.dir/TrappingError.cpp.o: CMakeFiles/App.dir/flags.make
-CMakeFiles/App.dir/TrappingError.cpp.o: ../TrappingError.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/artem/Рабочий стол/project/test_task/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/App.dir/TrappingError.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/App.dir/TrappingError.cpp.o -c "/home/artem/Рабочий стол/project/test_task/TrappingError.cpp"
+CMakeFiles/App.dir/trappingError.cpp.o: CMakeFiles/App.dir/flags.make
+CMakeFiles/App.dir/trappingError.cpp.o: ../trappingError.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/artem/Рабочий стол/project/test_task/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/App.dir/trappingError.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/App.dir/trappingError.cpp.o -c "/home/artem/Рабочий стол/project/test_task/trappingError.cpp"
 
-CMakeFiles/App.dir/TrappingError.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/App.dir/TrappingError.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/artem/Рабочий стол/project/test_task/TrappingError.cpp" > CMakeFiles/App.dir/TrappingError.cpp.i
+CMakeFiles/App.dir/trappingError.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/App.dir/trappingError.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/artem/Рабочий стол/project/test_task/trappingError.cpp" > CMakeFiles/App.dir/trappingError.cpp.i
 
-CMakeFiles/App.dir/TrappingError.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/App.dir/TrappingError.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/artem/Рабочий стол/project/test_task/TrappingError.cpp" -o CMakeFiles/App.dir/TrappingError.cpp.s
+CMakeFiles/App.dir/trappingError.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/App.dir/trappingError.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/artem/Рабочий стол/project/test_task/trappingError.cpp" -o CMakeFiles/App.dir/trappingError.cpp.s
 
 # Object files for target App
 App_OBJECTS = \
 "CMakeFiles/App.dir/main.cpp.o" \
 "CMakeFiles/App.dir/jsonReader.cpp.o" \
 "CMakeFiles/App.dir/hash.cpp.o" \
-"CMakeFiles/App.dir/TrappingError.cpp.o"
+"CMakeFiles/App.dir/trappingError.cpp.o"
 
 # External object files for target App
 App_EXTERNAL_OBJECTS =
@@ -122,7 +122,7 @@ App_EXTERNAL_OBJECTS =
 App: CMakeFiles/App.dir/main.cpp.o
 App: CMakeFiles/App.dir/jsonReader.cpp.o
 App: CMakeFiles/App.dir/hash.cpp.o
-App: CMakeFiles/App.dir/TrappingError.cpp.o
+App: CMakeFiles/App.dir/trappingError.cpp.o
 App: CMakeFiles/App.dir/build.make
 App: CMakeFiles/App.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/artem/Рабочий стол/project/test_task/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable App"

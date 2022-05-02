@@ -1,5 +1,5 @@
 #include "json.hpp"
-#include "TrappingError.h"
+#include "trappingError.h"
 
 #include <iostream>
 #include <fstream>

@@ -123,33 +123,6 @@ App/fast:
 	$(MAKE) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/build
 .PHONY : App/fast
 
-TrappingError.o: TrappingError.cpp.o
-
-.PHONY : TrappingError.o
-
-# target to build an object file
-TrappingError.cpp.o:
-	$(MAKE) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/TrappingError.cpp.o
-.PHONY : TrappingError.cpp.o
-
-TrappingError.i: TrappingError.cpp.i
-
-.PHONY : TrappingError.i
-
-# target to preprocess a source file
-TrappingError.cpp.i:
-	$(MAKE) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/TrappingError.cpp.i
-.PHONY : TrappingError.cpp.i
-
-TrappingError.s: TrappingError.cpp.s
-
-.PHONY : TrappingError.s
-
-# target to generate assembly for a file
-TrappingError.cpp.s:
-	$(MAKE) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/TrappingError.cpp.s
-.PHONY : TrappingError.cpp.s
-
 hash.o: hash.cpp.o
 
 .PHONY : hash.o
@@ -231,6 +204,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+trappingError.o: trappingError.cpp.o
+
+.PHONY : trappingError.o
+
+# target to build an object file
+trappingError.cpp.o:
+	$(MAKE) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/trappingError.cpp.o
+.PHONY : trappingError.cpp.o
+
+trappingError.i: trappingError.cpp.i
+
+.PHONY : trappingError.i
+
+# target to preprocess a source file
+trappingError.cpp.i:
+	$(MAKE) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/trappingError.cpp.i
+.PHONY : trappingError.cpp.i
+
+trappingError.s: trappingError.cpp.s
+
+.PHONY : trappingError.s
+
+# target to generate assembly for a file
+trappingError.cpp.s:
+	$(MAKE) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/trappingError.cpp.s
+.PHONY : trappingError.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -240,9 +240,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... App"
-	@echo "... TrappingError.o"
-	@echo "... TrappingError.i"
-	@echo "... TrappingError.s"
 	@echo "... hash.o"
 	@echo "... hash.i"
 	@echo "... hash.s"
@@ -252,6 +249,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... trappingError.o"
+	@echo "... trappingError.i"
+	@echo "... trappingError.s"
 .PHONY : help
 
 
