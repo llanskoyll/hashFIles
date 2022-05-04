@@ -11,7 +11,6 @@ CMakeFiles/App.dir/hash.cpp.o: ../error.h
 CMakeFiles/App.dir/hash.cpp.o: ../fileInfo.h
 CMakeFiles/App.dir/hash.cpp.o: ../hash.cpp
 CMakeFiles/App.dir/hash.cpp.o: ../hash.h
-CMakeFiles/App.dir/hash.cpp.o: ../trappingError.h
 
 CMakeFiles/App.dir/jsonReader.cpp.o: ../error.h
 CMakeFiles/App.dir/jsonReader.cpp.o: ../fileInfo.h
@@ -26,7 +25,6 @@ CMakeFiles/App.dir/main.cpp.o: ../json.hpp
 CMakeFiles/App.dir/main.cpp.o: ../jsonReader.h
 CMakeFiles/App.dir/main.cpp.o: ../main.cpp
 CMakeFiles/App.dir/main.cpp.o: ../print.h
-CMakeFiles/App.dir/main.cpp.o: ../trappingError.h
 
 CMakeFiles/App.dir/print.cpp.o: ../fileInfo.h
 CMakeFiles/App.dir/print.cpp.o: ../print.cpp

@@ -56,6 +56,52 @@ CMAKE_BINARY_DIR = "/home/artem/Рабочий стол/project/test_task/build"
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -111,179 +157,95 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named App
+# Target rules for targets named hashFile_lib
 
 # Build rule for target.
-App: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 App
-.PHONY : App
+hashFile_lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hashFile_lib
+.PHONY : hashFile_lib
 
 # fast build rule for target.
-App/fast:
-	$(MAKE) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/build
-.PHONY : App/fast
+hashFile_lib/fast:
+	$(MAKE) -f src/CMakeFiles/hashFile_lib.dir/build.make src/CMakeFiles/hashFile_lib.dir/build
+.PHONY : hashFile_lib/fast
 
-error.o: error.cpp.o
+#=============================================================================
+# Target rules for targets named hashFile_run
 
-.PHONY : error.o
+# Build rule for target.
+hashFile_run: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hashFile_run
+.PHONY : hashFile_run
 
-# target to build an object file
-error.cpp.o:
-	$(MAKE) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/error.cpp.o
-.PHONY : error.cpp.o
+# fast build rule for target.
+hashFile_run/fast:
+	$(MAKE) -f src/CMakeFiles/hashFile_run.dir/build.make src/CMakeFiles/hashFile_run.dir/build
+.PHONY : hashFile_run/fast
 
-error.i: error.cpp.i
+#=============================================================================
+# Target rules for targets named hashFile_test
 
-.PHONY : error.i
+# Build rule for target.
+hashFile_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hashFile_test
+.PHONY : hashFile_test
 
-# target to preprocess a source file
-error.cpp.i:
-	$(MAKE) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/error.cpp.i
-.PHONY : error.cpp.i
+# fast build rule for target.
+hashFile_test/fast:
+	$(MAKE) -f test/CMakeFiles/hashFile_test.dir/build.make test/CMakeFiles/hashFile_test.dir/build
+.PHONY : hashFile_test/fast
 
-error.s: error.cpp.s
+#=============================================================================
+# Target rules for targets named gmock_main
 
-.PHONY : error.s
+# Build rule for target.
+gmock_main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gmock_main
+.PHONY : gmock_main
 
-# target to generate assembly for a file
-error.cpp.s:
-	$(MAKE) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/error.cpp.s
-.PHONY : error.cpp.s
+# fast build rule for target.
+gmock_main/fast:
+	$(MAKE) -f lib/googletest/googlemock/CMakeFiles/gmock_main.dir/build.make lib/googletest/googlemock/CMakeFiles/gmock_main.dir/build
+.PHONY : gmock_main/fast
 
-fileInfo.o: fileInfo.cpp.o
+#=============================================================================
+# Target rules for targets named gmock
 
-.PHONY : fileInfo.o
+# Build rule for target.
+gmock: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gmock
+.PHONY : gmock
 
-# target to build an object file
-fileInfo.cpp.o:
-	$(MAKE) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/fileInfo.cpp.o
-.PHONY : fileInfo.cpp.o
+# fast build rule for target.
+gmock/fast:
+	$(MAKE) -f lib/googletest/googlemock/CMakeFiles/gmock.dir/build.make lib/googletest/googlemock/CMakeFiles/gmock.dir/build
+.PHONY : gmock/fast
 
-fileInfo.i: fileInfo.cpp.i
+#=============================================================================
+# Target rules for targets named gtest_main
 
-.PHONY : fileInfo.i
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gtest_main
+.PHONY : gtest_main
 
-# target to preprocess a source file
-fileInfo.cpp.i:
-	$(MAKE) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/fileInfo.cpp.i
-.PHONY : fileInfo.cpp.i
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) -f lib/googletest/googletest/CMakeFiles/gtest_main.dir/build.make lib/googletest/googletest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
 
-fileInfo.s: fileInfo.cpp.s
+#=============================================================================
+# Target rules for targets named gtest
 
-.PHONY : fileInfo.s
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gtest
+.PHONY : gtest
 
-# target to generate assembly for a file
-fileInfo.cpp.s:
-	$(MAKE) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/fileInfo.cpp.s
-.PHONY : fileInfo.cpp.s
-
-hash.o: hash.cpp.o
-
-.PHONY : hash.o
-
-# target to build an object file
-hash.cpp.o:
-	$(MAKE) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/hash.cpp.o
-.PHONY : hash.cpp.o
-
-hash.i: hash.cpp.i
-
-.PHONY : hash.i
-
-# target to preprocess a source file
-hash.cpp.i:
-	$(MAKE) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/hash.cpp.i
-.PHONY : hash.cpp.i
-
-hash.s: hash.cpp.s
-
-.PHONY : hash.s
-
-# target to generate assembly for a file
-hash.cpp.s:
-	$(MAKE) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/hash.cpp.s
-.PHONY : hash.cpp.s
-
-jsonReader.o: jsonReader.cpp.o
-
-.PHONY : jsonReader.o
-
-# target to build an object file
-jsonReader.cpp.o:
-	$(MAKE) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/jsonReader.cpp.o
-.PHONY : jsonReader.cpp.o
-
-jsonReader.i: jsonReader.cpp.i
-
-.PHONY : jsonReader.i
-
-# target to preprocess a source file
-jsonReader.cpp.i:
-	$(MAKE) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/jsonReader.cpp.i
-.PHONY : jsonReader.cpp.i
-
-jsonReader.s: jsonReader.cpp.s
-
-.PHONY : jsonReader.s
-
-# target to generate assembly for a file
-jsonReader.cpp.s:
-	$(MAKE) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/jsonReader.cpp.s
-.PHONY : jsonReader.cpp.s
-
-main.o: main.cpp.o
-
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/main.cpp.s
-.PHONY : main.cpp.s
-
-print.o: print.cpp.o
-
-.PHONY : print.o
-
-# target to build an object file
-print.cpp.o:
-	$(MAKE) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/print.cpp.o
-.PHONY : print.cpp.o
-
-print.i: print.cpp.i
-
-.PHONY : print.i
-
-# target to preprocess a source file
-print.cpp.i:
-	$(MAKE) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/print.cpp.i
-.PHONY : print.cpp.i
-
-print.s: print.cpp.s
-
-.PHONY : print.s
-
-# target to generate assembly for a file
-print.cpp.s:
-	$(MAKE) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/print.cpp.s
-.PHONY : print.cpp.s
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) -f lib/googletest/googletest/CMakeFiles/gtest.dir/build.make lib/googletest/googletest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
 
 # Help Target
 help:
@@ -291,27 +253,19 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... install/strip"
+	@echo "... install/local"
+	@echo "... install"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... App"
-	@echo "... error.o"
-	@echo "... error.i"
-	@echo "... error.s"
-	@echo "... fileInfo.o"
-	@echo "... fileInfo.i"
-	@echo "... fileInfo.s"
-	@echo "... hash.o"
-	@echo "... hash.i"
-	@echo "... hash.s"
-	@echo "... jsonReader.o"
-	@echo "... jsonReader.i"
-	@echo "... jsonReader.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
-	@echo "... print.o"
-	@echo "... print.i"
-	@echo "... print.s"
+	@echo "... hashFile_lib"
+	@echo "... hashFile_run"
+	@echo "... hashFile_test"
+	@echo "... gmock_main"
+	@echo "... gmock"
+	@echo "... gtest_main"
+	@echo "... gtest"
 .PHONY : help
 
 

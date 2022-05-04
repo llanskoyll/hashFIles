@@ -1,7 +1,0 @@
-{
-  "files" : {
-    "jsonReader.cpp" : "../jsonReader.cpp",
-    "json.hpp": "../json.hpp",
-    "fileInfo.h" : "../fileInfo.h"
-  }
-}

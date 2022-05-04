@@ -1,0 +1,2 @@
+/usr/bin/ar qc libhashFile_lib.a  CMakeFiles/hashFile_lib.dir/error.cpp.o CMakeFiles/hashFile_lib.dir/fileInfo.cpp.o CMakeFiles/hashFile_lib.dir/hash.cpp.o CMakeFiles/hashFile_lib.dir/jsonReader.cpp.o CMakeFiles/hashFile_lib.dir/main.cpp.o CMakeFiles/hashFile_lib.dir/print.cpp.o
+/usr/bin/ranlib libhashFile_lib.a
