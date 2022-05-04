@@ -1,13 +1,11 @@
 #pragma once
 
-#include "trappingError.h"
 #include "fileInfo.h"
 #include "error.h"
 
 #include <iostream>
 #include <vector>
 #include <fstream>
-#include <map>
 #include <thread>
 #include <mutex>
 

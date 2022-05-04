@@ -4,7 +4,6 @@
 #include "error.h"
 #include "print.h"
 
-#include <map>
 #include <vector>
 #include <string>
 #include <thread>
