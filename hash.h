@@ -9,7 +9,16 @@
 #include <fstream>
 #include <map>
 #include <thread>
+#include <mutex>
+
+// возможные состояния потока
+enum ThreadStatus {
+  ThreadStatusFree, // поток свободен
+  ThreadStatusBusy, // поток обрабатывает файл
+  ThreadStatusEnd // поток должен прекратить работу
+};
 
 void hashCalc(std::vector <fileInfo> &file_vec, unsigned short int &countThread);
-void CRC32_count(fileInfo &check);
+void CRC32_count(fileInfo &file);
 unsigned int CRC32_function(unsigned char *buf, unsigned long len);
+void CRC32_multithread_count(fileInfo **file, ThreadStatus &status, std::mutex &th_mutex);
