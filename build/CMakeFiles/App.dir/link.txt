@@ -1,1 +1,0 @@
-/usr/bin/c++  -std=c++14 -pthread  -rdynamic CMakeFiles/App.dir/main.cpp.o CMakeFiles/App.dir/jsonReader.cpp.o CMakeFiles/App.dir/hash.cpp.o CMakeFiles/App.dir/error.cpp.o CMakeFiles/App.dir/fileInfo.cpp.o CMakeFiles/App.dir/print.cpp.o  -o App 

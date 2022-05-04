@@ -1,4 +1,6 @@
 #pragma once
+#ifndef HASHFILE_FILEINFO_H
+#define HASHFILE_FILEINFO_H
 
 #include <iostream>
 #include <vector>
@@ -18,3 +20,5 @@ public:
   unsigned int getHash();
   std::string split(const std::string &str, char sym);
 };
+
+#endif //HASHFILE_FILEINFO_H

@@ -157,19 +157,73 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-test/CMakeFiles/hashFile_test.dir/rule:
-	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/hashFile_test.dir/rule
-.PHONY : test/CMakeFiles/hashFile_test.dir/rule
+test/CMakeFiles/fileHash_test.dir/rule:
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/fileHash_test.dir/rule
+.PHONY : test/CMakeFiles/fileHash_test.dir/rule
 
 # Convenience name for target.
-hashFile_test: test/CMakeFiles/hashFile_test.dir/rule
+fileHash_test: test/CMakeFiles/fileHash_test.dir/rule
 
-.PHONY : hashFile_test
+.PHONY : fileHash_test
 
 # fast build rule for target.
-hashFile_test/fast:
-	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f test/CMakeFiles/hashFile_test.dir/build.make test/CMakeFiles/hashFile_test.dir/build
-.PHONY : hashFile_test/fast
+fileHash_test/fast:
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f test/CMakeFiles/fileHash_test.dir/build.make test/CMakeFiles/fileHash_test.dir/build
+.PHONY : fileHash_test/fast
+
+JsonReaderTest.o: JsonReaderTest.cpp.o
+
+.PHONY : JsonReaderTest.o
+
+# target to build an object file
+JsonReaderTest.cpp.o:
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f test/CMakeFiles/fileHash_test.dir/build.make test/CMakeFiles/fileHash_test.dir/JsonReaderTest.cpp.o
+.PHONY : JsonReaderTest.cpp.o
+
+JsonReaderTest.i: JsonReaderTest.cpp.i
+
+.PHONY : JsonReaderTest.i
+
+# target to preprocess a source file
+JsonReaderTest.cpp.i:
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f test/CMakeFiles/fileHash_test.dir/build.make test/CMakeFiles/fileHash_test.dir/JsonReaderTest.cpp.i
+.PHONY : JsonReaderTest.cpp.i
+
+JsonReaderTest.s: JsonReaderTest.cpp.s
+
+.PHONY : JsonReaderTest.s
+
+# target to generate assembly for a file
+JsonReaderTest.cpp.s:
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f test/CMakeFiles/fileHash_test.dir/build.make test/CMakeFiles/fileHash_test.dir/JsonReaderTest.cpp.s
+.PHONY : JsonReaderTest.cpp.s
+
+hash-test.o: hash-test.cpp.o
+
+.PHONY : hash-test.o
+
+# target to build an object file
+hash-test.cpp.o:
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f test/CMakeFiles/fileHash_test.dir/build.make test/CMakeFiles/fileHash_test.dir/hash-test.cpp.o
+.PHONY : hash-test.cpp.o
+
+hash-test.i: hash-test.cpp.i
+
+.PHONY : hash-test.i
+
+# target to preprocess a source file
+hash-test.cpp.i:
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f test/CMakeFiles/fileHash_test.dir/build.make test/CMakeFiles/fileHash_test.dir/hash-test.cpp.i
+.PHONY : hash-test.cpp.i
+
+hash-test.s: hash-test.cpp.s
+
+.PHONY : hash-test.s
+
+# target to generate assembly for a file
+hash-test.cpp.s:
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f test/CMakeFiles/fileHash_test.dir/build.make test/CMakeFiles/fileHash_test.dir/hash-test.cpp.s
+.PHONY : hash-test.cpp.s
 
 mainTest.o: mainTest.cpp.o
 
@@ -177,7 +231,7 @@ mainTest.o: mainTest.cpp.o
 
 # target to build an object file
 mainTest.cpp.o:
-	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f test/CMakeFiles/hashFile_test.dir/build.make test/CMakeFiles/hashFile_test.dir/mainTest.cpp.o
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f test/CMakeFiles/fileHash_test.dir/build.make test/CMakeFiles/fileHash_test.dir/mainTest.cpp.o
 .PHONY : mainTest.cpp.o
 
 mainTest.i: mainTest.cpp.i
@@ -186,7 +240,7 @@ mainTest.i: mainTest.cpp.i
 
 # target to preprocess a source file
 mainTest.cpp.i:
-	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f test/CMakeFiles/hashFile_test.dir/build.make test/CMakeFiles/hashFile_test.dir/mainTest.cpp.i
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f test/CMakeFiles/fileHash_test.dir/build.make test/CMakeFiles/fileHash_test.dir/mainTest.cpp.i
 .PHONY : mainTest.cpp.i
 
 mainTest.s: mainTest.cpp.s
@@ -195,8 +249,35 @@ mainTest.s: mainTest.cpp.s
 
 # target to generate assembly for a file
 mainTest.cpp.s:
-	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f test/CMakeFiles/hashFile_test.dir/build.make test/CMakeFiles/hashFile_test.dir/mainTest.cpp.s
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f test/CMakeFiles/fileHash_test.dir/build.make test/CMakeFiles/fileHash_test.dir/mainTest.cpp.s
 .PHONY : mainTest.cpp.s
+
+splitTest.o: splitTest.cpp.o
+
+.PHONY : splitTest.o
+
+# target to build an object file
+splitTest.cpp.o:
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f test/CMakeFiles/fileHash_test.dir/build.make test/CMakeFiles/fileHash_test.dir/splitTest.cpp.o
+.PHONY : splitTest.cpp.o
+
+splitTest.i: splitTest.cpp.i
+
+.PHONY : splitTest.i
+
+# target to preprocess a source file
+splitTest.cpp.i:
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f test/CMakeFiles/fileHash_test.dir/build.make test/CMakeFiles/fileHash_test.dir/splitTest.cpp.i
+.PHONY : splitTest.cpp.i
+
+splitTest.s: splitTest.cpp.s
+
+.PHONY : splitTest.s
+
+# target to generate assembly for a file
+splitTest.cpp.s:
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f test/CMakeFiles/fileHash_test.dir/build.make test/CMakeFiles/fileHash_test.dir/splitTest.cpp.s
+.PHONY : splitTest.cpp.s
 
 # Help Target
 help:
@@ -210,10 +291,19 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... hashFile_test"
+	@echo "... fileHash_test"
+	@echo "... JsonReaderTest.o"
+	@echo "... JsonReaderTest.i"
+	@echo "... JsonReaderTest.s"
+	@echo "... hash-test.o"
+	@echo "... hash-test.i"
+	@echo "... hash-test.s"
 	@echo "... mainTest.o"
 	@echo "... mainTest.i"
 	@echo "... mainTest.s"
+	@echo "... splitTest.o"
+	@echo "... splitTest.i"
+	@echo "... splitTest.s"
 .PHONY : help
 
 

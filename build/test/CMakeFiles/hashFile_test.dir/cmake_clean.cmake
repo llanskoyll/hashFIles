@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/hashFile_test.dir/hash-test.cpp.o"
   "CMakeFiles/hashFile_test.dir/mainTest.cpp.o"
   "hashFile_test"
   "hashFile_test.pdb"

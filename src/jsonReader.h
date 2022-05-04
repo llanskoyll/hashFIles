@@ -1,4 +1,6 @@
-#pragma once
+#ifndef HASHFILE_JSONREADER_H
+#define HASHFILE_JSONREADER_H
+
 
 #include "json.hpp"
 #include "fileInfo.h"
@@ -11,3 +13,5 @@
 
 using json = nlohmann::json;
 void readJSON(std::string &pathJSON, std::vector<fileInfo> &file_vec);
+
+#endif //HASHFILE_JSONREADER_H

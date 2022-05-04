@@ -157,43 +157,43 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named hashFile_lib
+# Target rules for targets named fileHash_lib
 
 # Build rule for target.
-hashFile_lib: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 hashFile_lib
-.PHONY : hashFile_lib
+fileHash_lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 fileHash_lib
+.PHONY : fileHash_lib
 
 # fast build rule for target.
-hashFile_lib/fast:
-	$(MAKE) -f src/CMakeFiles/hashFile_lib.dir/build.make src/CMakeFiles/hashFile_lib.dir/build
-.PHONY : hashFile_lib/fast
+fileHash_lib/fast:
+	$(MAKE) -f src/CMakeFiles/fileHash_lib.dir/build.make src/CMakeFiles/fileHash_lib.dir/build
+.PHONY : fileHash_lib/fast
 
 #=============================================================================
-# Target rules for targets named hashFile_run
+# Target rules for targets named fileHash_run
 
 # Build rule for target.
-hashFile_run: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 hashFile_run
-.PHONY : hashFile_run
+fileHash_run: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 fileHash_run
+.PHONY : fileHash_run
 
 # fast build rule for target.
-hashFile_run/fast:
-	$(MAKE) -f src/CMakeFiles/hashFile_run.dir/build.make src/CMakeFiles/hashFile_run.dir/build
-.PHONY : hashFile_run/fast
+fileHash_run/fast:
+	$(MAKE) -f src/CMakeFiles/fileHash_run.dir/build.make src/CMakeFiles/fileHash_run.dir/build
+.PHONY : fileHash_run/fast
 
 #=============================================================================
-# Target rules for targets named hashFile_test
+# Target rules for targets named fileHash_test
 
 # Build rule for target.
-hashFile_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 hashFile_test
-.PHONY : hashFile_test
+fileHash_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 fileHash_test
+.PHONY : fileHash_test
 
 # fast build rule for target.
-hashFile_test/fast:
-	$(MAKE) -f test/CMakeFiles/hashFile_test.dir/build.make test/CMakeFiles/hashFile_test.dir/build
-.PHONY : hashFile_test/fast
+fileHash_test/fast:
+	$(MAKE) -f test/CMakeFiles/fileHash_test.dir/build.make test/CMakeFiles/fileHash_test.dir/build
+.PHONY : fileHash_test/fast
 
 #=============================================================================
 # Target rules for targets named gmock_main
@@ -259,9 +259,9 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... hashFile_lib"
-	@echo "... hashFile_run"
-	@echo "... hashFile_test"
+	@echo "... fileHash_lib"
+	@echo "... fileHash_run"
+	@echo "... fileHash_test"
 	@echo "... gmock_main"
 	@echo "... gmock"
 	@echo "... gtest_main"

@@ -1,6 +1,8 @@
 {
   "files" : {
-    "test_1" : "../exampleFiles/test_1.txt",
-    "math" : "../exampleFiles/skanavi.pdf"
+    "test_1" : "../../exampleFiles/test_1.txt",
+    "test_2" : "../../exampleFiles/test_2.txt",
+    "test_3" : "../../exampleFiles/test_3.txt",
+    "math" : "../../exampleFiles/skanavi.pdf"
   }
 }

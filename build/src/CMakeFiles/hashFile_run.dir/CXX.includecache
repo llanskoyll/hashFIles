@@ -6,27 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/artem/Рабочий стол/project/test_task/src/error.cpp
-error.h
-/home/artem/Рабочий стол/project/test_task/src/error.h
-
 /home/artem/Рабочий стол/project/test_task/src/error.h
 iostream
 -
-
-/home/artem/Рабочий стол/project/test_task/src/fileInfo.cpp
-fileInfo.h
-/home/artem/Рабочий стол/project/test_task/src/fileInfo.h
 
 /home/artem/Рабочий стол/project/test_task/src/fileInfo.h
 iostream
 -
 vector
 -
-
-/home/artem/Рабочий стол/project/test_task/src/hash.cpp
-hash.h
-/home/artem/Рабочий стол/project/test_task/src/hash.h
 
 /home/artem/Рабочий стол/project/test_task/src/hash.h
 fileInfo.h
@@ -406,10 +394,6 @@ vector
 string_view
 -
 
-/home/artem/Рабочий стол/project/test_task/src/jsonReader.cpp
-jsonReader.h
-/home/artem/Рабочий стол/project/test_task/src/jsonReader.h
-
 /home/artem/Рабочий стол/project/test_task/src/jsonReader.h
 json.hpp
 /home/artem/Рабочий стол/project/test_task/src/json.hpp
@@ -443,10 +427,6 @@ string
 -
 thread
 -
-
-/home/artem/Рабочий стол/project/test_task/src/print.cpp
-print.h
-/home/artem/Рабочий стол/project/test_task/src/print.h
 
 /home/artem/Рабочий стол/project/test_task/src/print.h
 fileInfo.h

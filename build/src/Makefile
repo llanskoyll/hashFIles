@@ -80,17 +80,6 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -123,6 +112,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -157,34 +157,34 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/CMakeFiles/hashFile_lib.dir/rule:
-	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/hashFile_lib.dir/rule
-.PHONY : src/CMakeFiles/hashFile_lib.dir/rule
+src/CMakeFiles/fileHash_lib.dir/rule:
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/fileHash_lib.dir/rule
+.PHONY : src/CMakeFiles/fileHash_lib.dir/rule
 
 # Convenience name for target.
-hashFile_lib: src/CMakeFiles/hashFile_lib.dir/rule
+fileHash_lib: src/CMakeFiles/fileHash_lib.dir/rule
 
-.PHONY : hashFile_lib
+.PHONY : fileHash_lib
 
 # fast build rule for target.
-hashFile_lib/fast:
-	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/hashFile_lib.dir/build.make src/CMakeFiles/hashFile_lib.dir/build
-.PHONY : hashFile_lib/fast
+fileHash_lib/fast:
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/fileHash_lib.dir/build.make src/CMakeFiles/fileHash_lib.dir/build
+.PHONY : fileHash_lib/fast
 
 # Convenience name for target.
-src/CMakeFiles/hashFile_run.dir/rule:
-	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/hashFile_run.dir/rule
-.PHONY : src/CMakeFiles/hashFile_run.dir/rule
+src/CMakeFiles/fileHash_run.dir/rule:
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/fileHash_run.dir/rule
+.PHONY : src/CMakeFiles/fileHash_run.dir/rule
 
 # Convenience name for target.
-hashFile_run: src/CMakeFiles/hashFile_run.dir/rule
+fileHash_run: src/CMakeFiles/fileHash_run.dir/rule
 
-.PHONY : hashFile_run
+.PHONY : fileHash_run
 
 # fast build rule for target.
-hashFile_run/fast:
-	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/hashFile_run.dir/build.make src/CMakeFiles/hashFile_run.dir/build
-.PHONY : hashFile_run/fast
+fileHash_run/fast:
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/fileHash_run.dir/build.make src/CMakeFiles/fileHash_run.dir/build
+.PHONY : fileHash_run/fast
 
 error.o: error.cpp.o
 
@@ -192,8 +192,8 @@ error.o: error.cpp.o
 
 # target to build an object file
 error.cpp.o:
-	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/hashFile_lib.dir/build.make src/CMakeFiles/hashFile_lib.dir/error.cpp.o
-	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/hashFile_run.dir/build.make src/CMakeFiles/hashFile_run.dir/error.cpp.o
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/fileHash_lib.dir/build.make src/CMakeFiles/fileHash_lib.dir/error.cpp.o
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/fileHash_run.dir/build.make src/CMakeFiles/fileHash_run.dir/error.cpp.o
 .PHONY : error.cpp.o
 
 error.i: error.cpp.i
@@ -202,8 +202,8 @@ error.i: error.cpp.i
 
 # target to preprocess a source file
 error.cpp.i:
-	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/hashFile_lib.dir/build.make src/CMakeFiles/hashFile_lib.dir/error.cpp.i
-	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/hashFile_run.dir/build.make src/CMakeFiles/hashFile_run.dir/error.cpp.i
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/fileHash_lib.dir/build.make src/CMakeFiles/fileHash_lib.dir/error.cpp.i
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/fileHash_run.dir/build.make src/CMakeFiles/fileHash_run.dir/error.cpp.i
 .PHONY : error.cpp.i
 
 error.s: error.cpp.s
@@ -212,8 +212,8 @@ error.s: error.cpp.s
 
 # target to generate assembly for a file
 error.cpp.s:
-	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/hashFile_lib.dir/build.make src/CMakeFiles/hashFile_lib.dir/error.cpp.s
-	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/hashFile_run.dir/build.make src/CMakeFiles/hashFile_run.dir/error.cpp.s
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/fileHash_lib.dir/build.make src/CMakeFiles/fileHash_lib.dir/error.cpp.s
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/fileHash_run.dir/build.make src/CMakeFiles/fileHash_run.dir/error.cpp.s
 .PHONY : error.cpp.s
 
 fileInfo.o: fileInfo.cpp.o
@@ -222,8 +222,8 @@ fileInfo.o: fileInfo.cpp.o
 
 # target to build an object file
 fileInfo.cpp.o:
-	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/hashFile_lib.dir/build.make src/CMakeFiles/hashFile_lib.dir/fileInfo.cpp.o
-	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/hashFile_run.dir/build.make src/CMakeFiles/hashFile_run.dir/fileInfo.cpp.o
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/fileHash_lib.dir/build.make src/CMakeFiles/fileHash_lib.dir/fileInfo.cpp.o
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/fileHash_run.dir/build.make src/CMakeFiles/fileHash_run.dir/fileInfo.cpp.o
 .PHONY : fileInfo.cpp.o
 
 fileInfo.i: fileInfo.cpp.i
@@ -232,8 +232,8 @@ fileInfo.i: fileInfo.cpp.i
 
 # target to preprocess a source file
 fileInfo.cpp.i:
-	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/hashFile_lib.dir/build.make src/CMakeFiles/hashFile_lib.dir/fileInfo.cpp.i
-	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/hashFile_run.dir/build.make src/CMakeFiles/hashFile_run.dir/fileInfo.cpp.i
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/fileHash_lib.dir/build.make src/CMakeFiles/fileHash_lib.dir/fileInfo.cpp.i
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/fileHash_run.dir/build.make src/CMakeFiles/fileHash_run.dir/fileInfo.cpp.i
 .PHONY : fileInfo.cpp.i
 
 fileInfo.s: fileInfo.cpp.s
@@ -242,8 +242,8 @@ fileInfo.s: fileInfo.cpp.s
 
 # target to generate assembly for a file
 fileInfo.cpp.s:
-	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/hashFile_lib.dir/build.make src/CMakeFiles/hashFile_lib.dir/fileInfo.cpp.s
-	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/hashFile_run.dir/build.make src/CMakeFiles/hashFile_run.dir/fileInfo.cpp.s
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/fileHash_lib.dir/build.make src/CMakeFiles/fileHash_lib.dir/fileInfo.cpp.s
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/fileHash_run.dir/build.make src/CMakeFiles/fileHash_run.dir/fileInfo.cpp.s
 .PHONY : fileInfo.cpp.s
 
 hash.o: hash.cpp.o
@@ -252,8 +252,8 @@ hash.o: hash.cpp.o
 
 # target to build an object file
 hash.cpp.o:
-	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/hashFile_lib.dir/build.make src/CMakeFiles/hashFile_lib.dir/hash.cpp.o
-	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/hashFile_run.dir/build.make src/CMakeFiles/hashFile_run.dir/hash.cpp.o
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/fileHash_lib.dir/build.make src/CMakeFiles/fileHash_lib.dir/hash.cpp.o
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/fileHash_run.dir/build.make src/CMakeFiles/fileHash_run.dir/hash.cpp.o
 .PHONY : hash.cpp.o
 
 hash.i: hash.cpp.i
@@ -262,8 +262,8 @@ hash.i: hash.cpp.i
 
 # target to preprocess a source file
 hash.cpp.i:
-	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/hashFile_lib.dir/build.make src/CMakeFiles/hashFile_lib.dir/hash.cpp.i
-	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/hashFile_run.dir/build.make src/CMakeFiles/hashFile_run.dir/hash.cpp.i
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/fileHash_lib.dir/build.make src/CMakeFiles/fileHash_lib.dir/hash.cpp.i
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/fileHash_run.dir/build.make src/CMakeFiles/fileHash_run.dir/hash.cpp.i
 .PHONY : hash.cpp.i
 
 hash.s: hash.cpp.s
@@ -272,8 +272,8 @@ hash.s: hash.cpp.s
 
 # target to generate assembly for a file
 hash.cpp.s:
-	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/hashFile_lib.dir/build.make src/CMakeFiles/hashFile_lib.dir/hash.cpp.s
-	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/hashFile_run.dir/build.make src/CMakeFiles/hashFile_run.dir/hash.cpp.s
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/fileHash_lib.dir/build.make src/CMakeFiles/fileHash_lib.dir/hash.cpp.s
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/fileHash_run.dir/build.make src/CMakeFiles/fileHash_run.dir/hash.cpp.s
 .PHONY : hash.cpp.s
 
 jsonReader.o: jsonReader.cpp.o
@@ -282,8 +282,8 @@ jsonReader.o: jsonReader.cpp.o
 
 # target to build an object file
 jsonReader.cpp.o:
-	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/hashFile_lib.dir/build.make src/CMakeFiles/hashFile_lib.dir/jsonReader.cpp.o
-	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/hashFile_run.dir/build.make src/CMakeFiles/hashFile_run.dir/jsonReader.cpp.o
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/fileHash_lib.dir/build.make src/CMakeFiles/fileHash_lib.dir/jsonReader.cpp.o
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/fileHash_run.dir/build.make src/CMakeFiles/fileHash_run.dir/jsonReader.cpp.o
 .PHONY : jsonReader.cpp.o
 
 jsonReader.i: jsonReader.cpp.i
@@ -292,8 +292,8 @@ jsonReader.i: jsonReader.cpp.i
 
 # target to preprocess a source file
 jsonReader.cpp.i:
-	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/hashFile_lib.dir/build.make src/CMakeFiles/hashFile_lib.dir/jsonReader.cpp.i
-	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/hashFile_run.dir/build.make src/CMakeFiles/hashFile_run.dir/jsonReader.cpp.i
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/fileHash_lib.dir/build.make src/CMakeFiles/fileHash_lib.dir/jsonReader.cpp.i
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/fileHash_run.dir/build.make src/CMakeFiles/fileHash_run.dir/jsonReader.cpp.i
 .PHONY : jsonReader.cpp.i
 
 jsonReader.s: jsonReader.cpp.s
@@ -302,8 +302,8 @@ jsonReader.s: jsonReader.cpp.s
 
 # target to generate assembly for a file
 jsonReader.cpp.s:
-	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/hashFile_lib.dir/build.make src/CMakeFiles/hashFile_lib.dir/jsonReader.cpp.s
-	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/hashFile_run.dir/build.make src/CMakeFiles/hashFile_run.dir/jsonReader.cpp.s
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/fileHash_lib.dir/build.make src/CMakeFiles/fileHash_lib.dir/jsonReader.cpp.s
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/fileHash_run.dir/build.make src/CMakeFiles/fileHash_run.dir/jsonReader.cpp.s
 .PHONY : jsonReader.cpp.s
 
 main.o: main.cpp.o
@@ -312,8 +312,8 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/hashFile_lib.dir/build.make src/CMakeFiles/hashFile_lib.dir/main.cpp.o
-	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/hashFile_run.dir/build.make src/CMakeFiles/hashFile_run.dir/main.cpp.o
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/fileHash_lib.dir/build.make src/CMakeFiles/fileHash_lib.dir/main.cpp.o
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/fileHash_run.dir/build.make src/CMakeFiles/fileHash_run.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -322,8 +322,8 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/hashFile_lib.dir/build.make src/CMakeFiles/hashFile_lib.dir/main.cpp.i
-	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/hashFile_run.dir/build.make src/CMakeFiles/hashFile_run.dir/main.cpp.i
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/fileHash_lib.dir/build.make src/CMakeFiles/fileHash_lib.dir/main.cpp.i
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/fileHash_run.dir/build.make src/CMakeFiles/fileHash_run.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -332,8 +332,8 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/hashFile_lib.dir/build.make src/CMakeFiles/hashFile_lib.dir/main.cpp.s
-	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/hashFile_run.dir/build.make src/CMakeFiles/hashFile_run.dir/main.cpp.s
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/fileHash_lib.dir/build.make src/CMakeFiles/fileHash_lib.dir/main.cpp.s
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/fileHash_run.dir/build.make src/CMakeFiles/fileHash_run.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 print.o: print.cpp.o
@@ -342,8 +342,8 @@ print.o: print.cpp.o
 
 # target to build an object file
 print.cpp.o:
-	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/hashFile_lib.dir/build.make src/CMakeFiles/hashFile_lib.dir/print.cpp.o
-	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/hashFile_run.dir/build.make src/CMakeFiles/hashFile_run.dir/print.cpp.o
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/fileHash_lib.dir/build.make src/CMakeFiles/fileHash_lib.dir/print.cpp.o
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/fileHash_run.dir/build.make src/CMakeFiles/fileHash_run.dir/print.cpp.o
 .PHONY : print.cpp.o
 
 print.i: print.cpp.i
@@ -352,8 +352,8 @@ print.i: print.cpp.i
 
 # target to preprocess a source file
 print.cpp.i:
-	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/hashFile_lib.dir/build.make src/CMakeFiles/hashFile_lib.dir/print.cpp.i
-	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/hashFile_run.dir/build.make src/CMakeFiles/hashFile_run.dir/print.cpp.i
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/fileHash_lib.dir/build.make src/CMakeFiles/fileHash_lib.dir/print.cpp.i
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/fileHash_run.dir/build.make src/CMakeFiles/fileHash_run.dir/print.cpp.i
 .PHONY : print.cpp.i
 
 print.s: print.cpp.s
@@ -362,8 +362,8 @@ print.s: print.cpp.s
 
 # target to generate assembly for a file
 print.cpp.s:
-	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/hashFile_lib.dir/build.make src/CMakeFiles/hashFile_lib.dir/print.cpp.s
-	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/hashFile_run.dir/build.make src/CMakeFiles/hashFile_run.dir/print.cpp.s
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/fileHash_lib.dir/build.make src/CMakeFiles/fileHash_lib.dir/print.cpp.s
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/fileHash_run.dir/build.make src/CMakeFiles/fileHash_run.dir/print.cpp.s
 .PHONY : print.cpp.s
 
 # Help Target
@@ -374,12 +374,12 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... install/local"
-	@echo "... edit_cache"
-	@echo "... hashFile_lib"
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... hashFile_run"
+	@echo "... edit_cache"
+	@echo "... fileHash_lib"
+	@echo "... fileHash_run"
 	@echo "... error.o"
 	@echo "... error.i"
 	@echo "... error.s"

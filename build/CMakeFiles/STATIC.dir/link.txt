@@ -1,2 +1,0 @@
-/usr/bin/ar qc libSTATIC.a  CMakeFiles/STATIC.dir/main.cpp.o CMakeFiles/STATIC.dir/jsonReader.cpp.o CMakeFiles/STATIC.dir/hash.cpp.o CMakeFiles/STATIC.dir/error.cpp.o CMakeFiles/STATIC.dir/fileInfo.cpp.o CMakeFiles/STATIC.dir/print.cpp.o
-/usr/bin/ranlib libSTATIC.a
