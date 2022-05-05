@@ -154,6 +154,7 @@ src/fileHash_run: src/CMakeFiles/fileHash_run.dir/jsonReader.cpp.o
 src/fileHash_run: src/CMakeFiles/fileHash_run.dir/main.cpp.o
 src/fileHash_run: src/CMakeFiles/fileHash_run.dir/print.cpp.o
 src/fileHash_run: src/CMakeFiles/fileHash_run.dir/build.make
+src/fileHash_run: /usr/local/lib/libbenchmark.a
 src/fileHash_run: src/CMakeFiles/fileHash_run.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/artem/Рабочий стол/project/test_task/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable fileHash_run"
 	cd "/home/artem/Рабочий стол/project/test_task/build/src" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fileHash_run.dir/link.txt --verbose=$(VERBOSE)
