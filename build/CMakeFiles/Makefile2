@@ -229,8 +229,8 @@ src/CMakeFiles/fileHash_run.dir/clean:
 # Target rules for target test/CMakeFiles/fileHash_test.dir
 
 # All Build rule for target.
-test/CMakeFiles/fileHash_test.dir/all: src/CMakeFiles/fileHash_lib.dir/all
 test/CMakeFiles/fileHash_test.dir/all: lib/googletest/googletest/CMakeFiles/gtest.dir/all
+test/CMakeFiles/fileHash_test.dir/all: src/CMakeFiles/fileHash_lib.dir/all
 	$(MAKE) -f test/CMakeFiles/fileHash_test.dir/build.make test/CMakeFiles/fileHash_test.dir/depend
 	$(MAKE) -f test/CMakeFiles/fileHash_test.dir/build.make test/CMakeFiles/fileHash_test.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/artem/Рабочий стол/project/test_task/build/CMakeFiles" --progress-num=15,16,17,18,19 "Built target fileHash_test"

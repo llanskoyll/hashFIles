@@ -2,7 +2,18 @@
   "files" : {
     "test_1" : "../../exampleFiles/test_1.txt",
     "test_2" : "../../exampleFiles/test_2.txt",
-    "test_3" : "../../exampleFiles/test_3.txt",
-    "math" : "../../exampleFiles/skanavi.pdf"
-  }
+    "test_3" : "../../exampleFiles/groc_alg.pdf",
+    "test_4" : "../../exampleFiles/test_3.txt",
+    "test_5" : "../../exampleFiles/groc_alg.pdf",
+    "test_6" : "../../exampleFiles/test_1.txt",
+    "test_7" : "../../exampleFiles/test_2.txt",
+    "test_8" : "../../exampleFiles/test_1.txt",
+    "test_9" : "../../exampleFiles/test_2.txt",
+    "test_10" : "../../exampleFiles/groc_alg.pdf",
+    "test_11" : "../../exampleFiles/test_3.txt",
+    "test_12" : "../../exampleFiles/groc_alg.pdf",
+    "test_13" : "../../exampleFiles/skanavi.pdf",
+    "test_14" : "../../exampleFiles/groc_alg.pdf",
+    "test_15" : "../../exampleFiles/test_3.txt"
+    }
 }

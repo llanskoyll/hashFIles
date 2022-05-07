@@ -11,3 +11,8 @@ add_library(${BINARY}_lib STATIC ${SOURCES})
 
 find_package(benchmark REQUIRED)
 target_link_libraries(${BINARY}_run PRIVATE benchmark::benchmark)
+
+find_package(OpenMP)
+if(OpenMP_CXX_FOUND)
+    target_link_libraries(${BINARY}_run PUBLIC OpenMP::OpenMP_CXX)
+endif()

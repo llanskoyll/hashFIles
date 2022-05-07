@@ -13,7 +13,9 @@ void fileInfo::setPath(std::string &path) {
 void fileInfo::setHash(unsigned int &hash) {
   this->hash = hash;
 }
-
+void fileInfo::setThread(unsigned int &thread) {
+  this->thread = thread;
+}
 
 
 std::string fileInfo::getName() {
@@ -25,7 +27,9 @@ std::string fileInfo::getPath() {
 unsigned int fileInfo::getHash() {
   return this->hash;
 }
-
+unsigned int fileInfo::getThread() {
+  return this->thread;
+}
 
 
 
