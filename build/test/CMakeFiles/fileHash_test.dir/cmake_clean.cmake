@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/fileHash_test.dir/JsonReaderTest.cpp.o"
   "CMakeFiles/fileHash_test.dir/hash-test.cpp.o"
   "CMakeFiles/fileHash_test.dir/mainTest.cpp.o"
   "CMakeFiles/fileHash_test.dir/splitTest.cpp.o"

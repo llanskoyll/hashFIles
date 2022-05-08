@@ -57,22 +57,9 @@ include test/CMakeFiles/fileHash_test.dir/progress.make
 # Include the compile flags for this target's objects.
 include test/CMakeFiles/fileHash_test.dir/flags.make
 
-test/CMakeFiles/fileHash_test.dir/JsonReaderTest.cpp.o: test/CMakeFiles/fileHash_test.dir/flags.make
-test/CMakeFiles/fileHash_test.dir/JsonReaderTest.cpp.o: ../test/JsonReaderTest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/artem/Рабочий стол/project/test_task/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/CMakeFiles/fileHash_test.dir/JsonReaderTest.cpp.o"
-	cd "/home/artem/Рабочий стол/project/test_task/build/test" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/fileHash_test.dir/JsonReaderTest.cpp.o -c "/home/artem/Рабочий стол/project/test_task/test/JsonReaderTest.cpp"
-
-test/CMakeFiles/fileHash_test.dir/JsonReaderTest.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fileHash_test.dir/JsonReaderTest.cpp.i"
-	cd "/home/artem/Рабочий стол/project/test_task/build/test" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/artem/Рабочий стол/project/test_task/test/JsonReaderTest.cpp" > CMakeFiles/fileHash_test.dir/JsonReaderTest.cpp.i
-
-test/CMakeFiles/fileHash_test.dir/JsonReaderTest.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fileHash_test.dir/JsonReaderTest.cpp.s"
-	cd "/home/artem/Рабочий стол/project/test_task/build/test" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/artem/Рабочий стол/project/test_task/test/JsonReaderTest.cpp" -o CMakeFiles/fileHash_test.dir/JsonReaderTest.cpp.s
-
 test/CMakeFiles/fileHash_test.dir/hash-test.cpp.o: test/CMakeFiles/fileHash_test.dir/flags.make
 test/CMakeFiles/fileHash_test.dir/hash-test.cpp.o: ../test/hash-test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/artem/Рабочий стол/project/test_task/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object test/CMakeFiles/fileHash_test.dir/hash-test.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/artem/Рабочий стол/project/test_task/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/CMakeFiles/fileHash_test.dir/hash-test.cpp.o"
 	cd "/home/artem/Рабочий стол/project/test_task/build/test" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/fileHash_test.dir/hash-test.cpp.o -c "/home/artem/Рабочий стол/project/test_task/test/hash-test.cpp"
 
 test/CMakeFiles/fileHash_test.dir/hash-test.cpp.i: cmake_force
@@ -85,7 +72,7 @@ test/CMakeFiles/fileHash_test.dir/hash-test.cpp.s: cmake_force
 
 test/CMakeFiles/fileHash_test.dir/mainTest.cpp.o: test/CMakeFiles/fileHash_test.dir/flags.make
 test/CMakeFiles/fileHash_test.dir/mainTest.cpp.o: ../test/mainTest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/artem/Рабочий стол/project/test_task/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object test/CMakeFiles/fileHash_test.dir/mainTest.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/artem/Рабочий стол/project/test_task/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object test/CMakeFiles/fileHash_test.dir/mainTest.cpp.o"
 	cd "/home/artem/Рабочий стол/project/test_task/build/test" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/fileHash_test.dir/mainTest.cpp.o -c "/home/artem/Рабочий стол/project/test_task/test/mainTest.cpp"
 
 test/CMakeFiles/fileHash_test.dir/mainTest.cpp.i: cmake_force
@@ -98,7 +85,7 @@ test/CMakeFiles/fileHash_test.dir/mainTest.cpp.s: cmake_force
 
 test/CMakeFiles/fileHash_test.dir/splitTest.cpp.o: test/CMakeFiles/fileHash_test.dir/flags.make
 test/CMakeFiles/fileHash_test.dir/splitTest.cpp.o: ../test/splitTest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/artem/Рабочий стол/project/test_task/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object test/CMakeFiles/fileHash_test.dir/splitTest.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/artem/Рабочий стол/project/test_task/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object test/CMakeFiles/fileHash_test.dir/splitTest.cpp.o"
 	cd "/home/artem/Рабочий стол/project/test_task/build/test" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/fileHash_test.dir/splitTest.cpp.o -c "/home/artem/Рабочий стол/project/test_task/test/splitTest.cpp"
 
 test/CMakeFiles/fileHash_test.dir/splitTest.cpp.i: cmake_force
@@ -111,7 +98,6 @@ test/CMakeFiles/fileHash_test.dir/splitTest.cpp.s: cmake_force
 
 # Object files for target fileHash_test
 fileHash_test_OBJECTS = \
-"CMakeFiles/fileHash_test.dir/JsonReaderTest.cpp.o" \
 "CMakeFiles/fileHash_test.dir/hash-test.cpp.o" \
 "CMakeFiles/fileHash_test.dir/mainTest.cpp.o" \
 "CMakeFiles/fileHash_test.dir/splitTest.cpp.o"
@@ -119,7 +105,6 @@ fileHash_test_OBJECTS = \
 # External object files for target fileHash_test
 fileHash_test_EXTERNAL_OBJECTS =
 
-test/fileHash_test: test/CMakeFiles/fileHash_test.dir/JsonReaderTest.cpp.o
 test/fileHash_test: test/CMakeFiles/fileHash_test.dir/hash-test.cpp.o
 test/fileHash_test: test/CMakeFiles/fileHash_test.dir/mainTest.cpp.o
 test/fileHash_test: test/CMakeFiles/fileHash_test.dir/splitTest.cpp.o
@@ -127,7 +112,7 @@ test/fileHash_test: test/CMakeFiles/fileHash_test.dir/build.make
 test/fileHash_test: src/libfileHash_lib.a
 test/fileHash_test: lib/libgtest.a
 test/fileHash_test: test/CMakeFiles/fileHash_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/artem/Рабочий стол/project/test_task/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable fileHash_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/artem/Рабочий стол/project/test_task/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable fileHash_test"
 	cd "/home/artem/Рабочий стол/project/test_task/build/test" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fileHash_test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
