@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/fileHash_run.dir/jsonReader.cpp.o"
   "CMakeFiles/fileHash_run.dir/main.cpp.o"
   "CMakeFiles/fileHash_run.dir/print.cpp.o"
+  "CMakeFiles/fileHash_run.dir/stringFunction.cpp.o"
   "fileHash_run"
   "fileHash_run.pdb"
 )

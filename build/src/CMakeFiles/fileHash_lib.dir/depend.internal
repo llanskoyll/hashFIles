@@ -18,6 +18,7 @@ src/CMakeFiles/fileHash_lib.dir/jsonReader.cpp.o
  /home/artem/Рабочий стол/project/test_task/src/json.hpp
  /home/artem/Рабочий стол/project/test_task/src/jsonReader.cpp
  /home/artem/Рабочий стол/project/test_task/src/jsonReader.h
+ /home/artem/Рабочий стол/project/test_task/src/stringFunction.h
 src/CMakeFiles/fileHash_lib.dir/main.cpp.o
  /home/artem/Рабочий стол/project/test_task/src/error.h
  /home/artem/Рабочий стол/project/test_task/src/fileInfo.h
@@ -30,3 +31,6 @@ src/CMakeFiles/fileHash_lib.dir/print.cpp.o
  /home/artem/Рабочий стол/project/test_task/src/fileInfo.h
  /home/artem/Рабочий стол/project/test_task/src/print.cpp
  /home/artem/Рабочий стол/project/test_task/src/print.h
+src/CMakeFiles/fileHash_lib.dir/stringFunction.cpp.o
+ /home/artem/Рабочий стол/project/test_task/src/stringFunction.cpp
+ /home/artem/Рабочий стол/project/test_task/src/stringFunction.h

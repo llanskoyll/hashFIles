@@ -17,6 +17,7 @@ src/CMakeFiles/fileHash_lib.dir/jsonReader.cpp.o: ../src/fileInfo.h
 src/CMakeFiles/fileHash_lib.dir/jsonReader.cpp.o: ../src/json.hpp
 src/CMakeFiles/fileHash_lib.dir/jsonReader.cpp.o: ../src/jsonReader.cpp
 src/CMakeFiles/fileHash_lib.dir/jsonReader.cpp.o: ../src/jsonReader.h
+src/CMakeFiles/fileHash_lib.dir/jsonReader.cpp.o: ../src/stringFunction.h
 
 src/CMakeFiles/fileHash_lib.dir/main.cpp.o: ../src/error.h
 src/CMakeFiles/fileHash_lib.dir/main.cpp.o: ../src/fileInfo.h
@@ -29,4 +30,7 @@ src/CMakeFiles/fileHash_lib.dir/main.cpp.o: ../src/print.h
 src/CMakeFiles/fileHash_lib.dir/print.cpp.o: ../src/fileInfo.h
 src/CMakeFiles/fileHash_lib.dir/print.cpp.o: ../src/print.cpp
 src/CMakeFiles/fileHash_lib.dir/print.cpp.o: ../src/print.h
+
+src/CMakeFiles/fileHash_lib.dir/stringFunction.cpp.o: ../src/stringFunction.cpp
+src/CMakeFiles/fileHash_lib.dir/stringFunction.cpp.o: ../src/stringFunction.h
 

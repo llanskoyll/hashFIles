@@ -71,6 +71,6 @@ test/CMakeFiles/fileHash_test.dir/splitTest.cpp.o: ../lib/googletest/googletest/
 test/CMakeFiles/fileHash_test.dir/splitTest.cpp.o: ../lib/googletest/googletest/include/gtest/internal/gtest-port.h
 test/CMakeFiles/fileHash_test.dir/splitTest.cpp.o: ../lib/googletest/googletest/include/gtest/internal/gtest-string.h
 test/CMakeFiles/fileHash_test.dir/splitTest.cpp.o: ../lib/googletest/googletest/include/gtest/internal/gtest-type-util.h
-test/CMakeFiles/fileHash_test.dir/splitTest.cpp.o: ../src/fileInfo.h
+test/CMakeFiles/fileHash_test.dir/splitTest.cpp.o: ../src/stringFunction.h
 test/CMakeFiles/fileHash_test.dir/splitTest.cpp.o: ../test/splitTest.cpp
 

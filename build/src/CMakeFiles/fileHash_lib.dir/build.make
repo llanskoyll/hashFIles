@@ -135,6 +135,19 @@ src/CMakeFiles/fileHash_lib.dir/print.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fileHash_lib.dir/print.cpp.s"
 	cd "/home/artem/Рабочий стол/project/test_task/build/src" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/artem/Рабочий стол/project/test_task/src/print.cpp" -o CMakeFiles/fileHash_lib.dir/print.cpp.s
 
+src/CMakeFiles/fileHash_lib.dir/stringFunction.cpp.o: src/CMakeFiles/fileHash_lib.dir/flags.make
+src/CMakeFiles/fileHash_lib.dir/stringFunction.cpp.o: ../src/stringFunction.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/artem/Рабочий стол/project/test_task/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/fileHash_lib.dir/stringFunction.cpp.o"
+	cd "/home/artem/Рабочий стол/project/test_task/build/src" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/fileHash_lib.dir/stringFunction.cpp.o -c "/home/artem/Рабочий стол/project/test_task/src/stringFunction.cpp"
+
+src/CMakeFiles/fileHash_lib.dir/stringFunction.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fileHash_lib.dir/stringFunction.cpp.i"
+	cd "/home/artem/Рабочий стол/project/test_task/build/src" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/artem/Рабочий стол/project/test_task/src/stringFunction.cpp" > CMakeFiles/fileHash_lib.dir/stringFunction.cpp.i
+
+src/CMakeFiles/fileHash_lib.dir/stringFunction.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fileHash_lib.dir/stringFunction.cpp.s"
+	cd "/home/artem/Рабочий стол/project/test_task/build/src" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/artem/Рабочий стол/project/test_task/src/stringFunction.cpp" -o CMakeFiles/fileHash_lib.dir/stringFunction.cpp.s
+
 # Object files for target fileHash_lib
 fileHash_lib_OBJECTS = \
 "CMakeFiles/fileHash_lib.dir/error.cpp.o" \
@@ -142,7 +155,8 @@ fileHash_lib_OBJECTS = \
 "CMakeFiles/fileHash_lib.dir/hash.cpp.o" \
 "CMakeFiles/fileHash_lib.dir/jsonReader.cpp.o" \
 "CMakeFiles/fileHash_lib.dir/main.cpp.o" \
-"CMakeFiles/fileHash_lib.dir/print.cpp.o"
+"CMakeFiles/fileHash_lib.dir/print.cpp.o" \
+"CMakeFiles/fileHash_lib.dir/stringFunction.cpp.o"
 
 # External object files for target fileHash_lib
 fileHash_lib_EXTERNAL_OBJECTS =
@@ -153,9 +167,10 @@ src/libfileHash_lib.a: src/CMakeFiles/fileHash_lib.dir/hash.cpp.o
 src/libfileHash_lib.a: src/CMakeFiles/fileHash_lib.dir/jsonReader.cpp.o
 src/libfileHash_lib.a: src/CMakeFiles/fileHash_lib.dir/main.cpp.o
 src/libfileHash_lib.a: src/CMakeFiles/fileHash_lib.dir/print.cpp.o
+src/libfileHash_lib.a: src/CMakeFiles/fileHash_lib.dir/stringFunction.cpp.o
 src/libfileHash_lib.a: src/CMakeFiles/fileHash_lib.dir/build.make
 src/libfileHash_lib.a: src/CMakeFiles/fileHash_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/artem/Рабочий стол/project/test_task/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library libfileHash_lib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/artem/Рабочий стол/project/test_task/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library libfileHash_lib.a"
 	cd "/home/artem/Рабочий стол/project/test_task/build/src" && $(CMAKE_COMMAND) -P CMakeFiles/fileHash_lib.dir/cmake_clean_target.cmake
 	cd "/home/artem/Рабочий стол/project/test_task/build/src" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fileHash_lib.dir/link.txt --verbose=$(VERBOSE)
 

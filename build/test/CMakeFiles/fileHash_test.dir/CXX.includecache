@@ -366,7 +366,7 @@ cxxabi.h
 acxx_demangle.h
 -
 
-../src/fileInfo.h
+../src/stringFunction.h
 iostream
 -
 vector
@@ -375,6 +375,6 @@ vector
 /home/artem/Рабочий стол/project/test_task/test/splitTest.cpp
 gtest/gtest.h
 /home/artem/Рабочий стол/project/test_task/test/gtest/gtest.h
-fileInfo.h
-/home/artem/Рабочий стол/project/test_task/test/fileInfo.h
+stringFunction.h
+/home/artem/Рабочий стол/project/test_task/test/stringFunction.h
 

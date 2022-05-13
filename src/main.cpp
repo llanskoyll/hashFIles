@@ -9,18 +9,28 @@
 #include <thread>
 
 int main(int argc, char* argv[]) {
-  if(argc < 4) {
-    std::string pathJSON = argv[1];
-    unsigned short int countThread = std::stoi(argv[2]);
 
-    if(std::thread::hardware_concurrency() < countThread) setError("количество потоков не соответствует системе");
+  try 
+  {
+
+    if(argc != 3 || std::thread::hardware_concurrency() < std::stoi(argv[2])) 
+    { 
+      throw "Неверные аргументы"; 
+    };
+
+    std::string path_JSON = argv[1];
+    unsigned short int count_Thread = std::stoi(argv[2]);
     std::vector <fileInfo> file_vec;
 
-    readJSON(pathJSON,file_vec);
-    hashCalc(file_vec,countThread);
+    readJSON(path_JSON,file_vec);
+    hashCalc(file_vec,count_Thread);
     printInfoFile(file_vec);
-  } else {
-    setError("большое количество аргументов");
+
+  } 
+  catch(const char *ex) 
+  {
+    setError(ex);
   }
+
   return 0;
 }

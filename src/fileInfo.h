@@ -7,11 +7,14 @@
 
 class fileInfo {
 private:
+
   std::string name = "";
   std::string path = "";
   unsigned int hash = 0;
   unsigned int thread = 0;
+
 public:
+
   fileInfo() {};
   void setName(std::string &name);
   void setPath(std::string &path);
@@ -22,9 +25,7 @@ public:
   std::string getPath();
   unsigned int getHash();
   unsigned int getThread();
-
-  std::string split(const std::string &str, char sym);
-
+  
 };
 
 #endif //HASHFILE_FILEINFO_H

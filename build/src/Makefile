@@ -366,6 +366,36 @@ print.cpp.s:
 	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/fileHash_run.dir/build.make src/CMakeFiles/fileHash_run.dir/print.cpp.s
 .PHONY : print.cpp.s
 
+stringFunction.o: stringFunction.cpp.o
+
+.PHONY : stringFunction.o
+
+# target to build an object file
+stringFunction.cpp.o:
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/fileHash_lib.dir/build.make src/CMakeFiles/fileHash_lib.dir/stringFunction.cpp.o
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/fileHash_run.dir/build.make src/CMakeFiles/fileHash_run.dir/stringFunction.cpp.o
+.PHONY : stringFunction.cpp.o
+
+stringFunction.i: stringFunction.cpp.i
+
+.PHONY : stringFunction.i
+
+# target to preprocess a source file
+stringFunction.cpp.i:
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/fileHash_lib.dir/build.make src/CMakeFiles/fileHash_lib.dir/stringFunction.cpp.i
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/fileHash_run.dir/build.make src/CMakeFiles/fileHash_run.dir/stringFunction.cpp.i
+.PHONY : stringFunction.cpp.i
+
+stringFunction.s: stringFunction.cpp.s
+
+.PHONY : stringFunction.s
+
+# target to generate assembly for a file
+stringFunction.cpp.s:
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/fileHash_lib.dir/build.make src/CMakeFiles/fileHash_lib.dir/stringFunction.cpp.s
+	cd "/home/artem/Рабочий стол/project/test_task/build" && $(MAKE) -f src/CMakeFiles/fileHash_run.dir/build.make src/CMakeFiles/fileHash_run.dir/stringFunction.cpp.s
+.PHONY : stringFunction.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -398,6 +428,9 @@ help:
 	@echo "... print.o"
 	@echo "... print.i"
 	@echo "... print.s"
+	@echo "... stringFunction.o"
+	@echo "... stringFunction.i"
+	@echo "... stringFunction.s"
 .PHONY : help
 
 

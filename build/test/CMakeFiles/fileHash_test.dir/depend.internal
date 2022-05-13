@@ -72,5 +72,5 @@ test/CMakeFiles/fileHash_test.dir/splitTest.cpp.o
  ../lib/googletest/googletest/include/gtest/internal/gtest-port.h
  ../lib/googletest/googletest/include/gtest/internal/gtest-string.h
  ../lib/googletest/googletest/include/gtest/internal/gtest-type-util.h
- ../src/fileInfo.h
+ ../src/stringFunction.h
  /home/artem/Рабочий стол/project/test_task/test/splitTest.cpp

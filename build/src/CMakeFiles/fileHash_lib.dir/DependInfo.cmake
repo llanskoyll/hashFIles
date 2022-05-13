@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/artem/Рабочий стол/project/test_task/src/jsonReader.cpp" "/home/artem/Рабочий стол/project/test_task/build/src/CMakeFiles/fileHash_lib.dir/jsonReader.cpp.o"
   "/home/artem/Рабочий стол/project/test_task/src/main.cpp" "/home/artem/Рабочий стол/project/test_task/build/src/CMakeFiles/fileHash_lib.dir/main.cpp.o"
   "/home/artem/Рабочий стол/project/test_task/src/print.cpp" "/home/artem/Рабочий стол/project/test_task/build/src/CMakeFiles/fileHash_lib.dir/print.cpp.o"
+  "/home/artem/Рабочий стол/project/test_task/src/stringFunction.cpp" "/home/artem/Рабочий стол/project/test_task/build/src/CMakeFiles/fileHash_lib.dir/stringFunction.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
