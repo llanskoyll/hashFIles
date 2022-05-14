@@ -366,15 +366,39 @@ cxxabi.h
 acxx_demangle.h
 -
 
-../src/stringFunction.h
+../src/error.h
+iostream
+-
+
+../src/fileInfo.h
 iostream
 -
 vector
 -
 
-/home/artem/Рабочий стол/project/test_task/test/splitTest.cpp
+../src/hash.h
+fileInfo.h
+../src/fileInfo.h
+error.h
+../src/error.h
+omp.h
+-
+parallel/algorithm
+-
+iostream
+-
+vector
+-
+fstream
+-
+cmath
+-
+
+/home/artem/Рабочий стол/project/test_task/test/hash-test.cpp
 gtest/gtest.h
 /home/artem/Рабочий стол/project/test_task/test/gtest/gtest.h
-stringFunction.h
-/home/artem/Рабочий стол/project/test_task/test/stringFunction.h
+hash.h
+/home/artem/Рабочий стол/project/test_task/test/hash.h
+fileInfo.h
+/home/artem/Рабочий стол/project/test_task/test/fileInfo.h
 

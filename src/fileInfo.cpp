@@ -1,5 +1,11 @@
 #include "fileInfo.h"
 
+fileInfo::fileInfo(std::string name, std::string path) {
+  this->name = name;
+  this->path = path;
+}
+
+
 void fileInfo::setName(std::string &name) {
   this->name = name;
 };

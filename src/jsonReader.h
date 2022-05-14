@@ -12,6 +12,6 @@
 #include <vector>
 
 using json = nlohmann::json;
-void readJSON(std::string &pathJSON, std::vector<fileInfo> &file_vec);
+void readJSON(std::string pathJSON, std::vector<fileInfo> &file_vec);
 
 #endif //HASHFILE_JSONREADER_H

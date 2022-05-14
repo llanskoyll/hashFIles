@@ -1,9 +1,7 @@
 {
   "files" : {
-    "test_13" : "../../exampleFiles/skanavi.pdf",
-    "test_14" : "../../exampleFiles/skanavi.pdf",
-    "test_15" : "../../exampleFiles/skanavi.pdf",
-    "test_16" : "../../exampleFiles/skanavi.pdf",
-    "test_17" : "../../exampleFiles/skanavi.pdf"
+    "test_1" : "../../exampleFiles/text.txt",
+    "math" : "../../exampleFiles/skanavi.pdf",
+    "knuth" : "../../exampleFiles/Knuth.pdf"
     }
 }

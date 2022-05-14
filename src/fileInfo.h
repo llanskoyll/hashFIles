@@ -15,7 +15,9 @@ private:
 
 public:
 
-  fileInfo() {};
+  fileInfo(std::string name, std::string path);
+  ~fileInfo() {};
+
   void setName(std::string &name);
   void setPath(std::string &path);
   void setHash(unsigned int &hash);

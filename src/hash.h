@@ -11,11 +11,12 @@
 #include <iostream>
 #include <vector>
 #include <fstream>
-#include <thread>
-#include <mutex>
+#include <cmath>
 
-void hashCalc(std::vector <fileInfo> &file_vec, unsigned short int &countThread);
-void CRC32_count(fileInfo &file);
-unsigned int CRC32_function(unsigned char *buf, unsigned long len);
+
+void hashCalc(std::vector <fileInfo> &file_vec, const unsigned short int countThread);
+void CRC32_count(fileInfo &file, const std::vector <unsigned int> &crc_table);
+void createTable(std::vector <unsigned int> &crc_table);
+unsigned int CRC32_function(unsigned char *buf, unsigned long len, const std::vector <unsigned int> &crc_table);
 
 #endif //HASHFILE_HASH_H

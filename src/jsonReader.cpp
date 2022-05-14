@@ -1,7 +1,7 @@
 #include "jsonReader.h"
 #include "stringFunction.h"
 
-void readJSON(std::string &path_JSON, std::vector<fileInfo> &file_vec) {
+void readJSON(std::string path_JSON, std::vector<fileInfo> &file_vec) {
   
   std::ifstream file(path_JSON);
 
@@ -15,11 +15,9 @@ void readJSON(std::string &path_JSON, std::vector<fileInfo> &file_vec) {
     const auto& files = jsn["files"];
 
     for(const auto& f : files) {
-      fileInfo fileObj;
       std::string paths = f;
       std::string names = split(f,'/');
-      fileObj.setPath(paths);
-      fileObj.setName(names);
+      fileInfo fileObj(names,paths);
       file_vec.push_back(fileObj);
     }
 

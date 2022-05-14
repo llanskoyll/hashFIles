@@ -13,10 +13,7 @@ int main(int argc, char* argv[]) {
   try 
   {
 
-    if(argc != 3 || std::thread::hardware_concurrency() < std::stoi(argv[2])) 
-    { 
-      throw "Неверные аргументы"; 
-    };
+    if(argc != 3 || std::thread::hardware_concurrency() < std::stoi(argv[2])) { throw "Неверные аргументы"; };
 
     std::string path_JSON = argv[1];
     unsigned short int count_Thread = std::stoi(argv[2]);
