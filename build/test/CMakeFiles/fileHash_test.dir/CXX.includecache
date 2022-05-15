@@ -391,7 +391,7 @@ vector
 -
 fstream
 -
-cmath
+string.h
 -
 
 /home/artem/Рабочий стол/project/test_task/test/hash-test.cpp

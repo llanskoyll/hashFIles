@@ -23,8 +23,7 @@ int main(int argc, char* argv[]) {
     hashCalc(file_vec,count_Thread);
     printInfoFile(file_vec);
 
-  } 
-  catch(const char *ex) 
+  } catch(const char *ex) 
   {
     setError(ex);
   }

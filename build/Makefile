@@ -170,17 +170,17 @@ fileHash_lib/fast:
 .PHONY : fileHash_lib/fast
 
 #=============================================================================
-# Target rules for targets named fileHash_run
+# Target rules for targets named fileHash
 
 # Build rule for target.
-fileHash_run: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 fileHash_run
-.PHONY : fileHash_run
+fileHash: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 fileHash
+.PHONY : fileHash
 
 # fast build rule for target.
-fileHash_run/fast:
-	$(MAKE) -f src/CMakeFiles/fileHash_run.dir/build.make src/CMakeFiles/fileHash_run.dir/build
-.PHONY : fileHash_run/fast
+fileHash/fast:
+	$(MAKE) -f src/CMakeFiles/fileHash.dir/build.make src/CMakeFiles/fileHash.dir/build
+.PHONY : fileHash/fast
 
 #=============================================================================
 # Target rules for targets named fileHash_test
@@ -260,7 +260,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... fileHash_lib"
-	@echo "... fileHash_run"
+	@echo "... fileHash"
 	@echo "... fileHash_test"
 	@echo "... gmock_main"
 	@echo "... gmock"

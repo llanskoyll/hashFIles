@@ -8,26 +8,27 @@
 class fileInfo {
 private:
 
-  std::string name = "";
-  std::string path = "";
-  unsigned int hash = 0;
-  unsigned int thread = 0;
+  std::string _name = "";
+  std::string _path = "";
+  unsigned int _hash = 0;
+  unsigned int _thread = 0;
+  std::streamoff _size = 0;
 
 public:
 
   fileInfo(std::string name, std::string path);
   ~fileInfo() {};
 
-  void setName(std::string &name);
-  void setPath(std::string &path);
   void setHash(unsigned int &hash);
   void setThread(unsigned int &thread);
+  void setSize(std::streamoff &size);
 
   std::string getName();
   std::string getPath();
   unsigned int getHash();
   unsigned int getThread();
-  
+  unsigned int getSize();
+
 };
 
 #endif //HASHFILE_FILEINFO_H

@@ -22,9 +22,11 @@ void readJSON(std::string path_JSON, std::vector<fileInfo> &file_vec) {
     }
 
     file.close();
-  } catch (const char *ex)
-  {
+
+  } catch (const char *ex) {
+
     setError(ex);
+    
   }
 
 }

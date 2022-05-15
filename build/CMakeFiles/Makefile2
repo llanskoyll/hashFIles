@@ -138,7 +138,7 @@ lib/googletest/googletest/clean: lib/googletest/googletest/CMakeFiles/gtest.dir/
 
 # Recursive "all" directory target.
 src/all: src/CMakeFiles/fileHash_lib.dir/all
-src/all: src/CMakeFiles/fileHash_run.dir/all
+src/all: src/CMakeFiles/fileHash.dir/all
 
 .PHONY : src/all
 
@@ -149,7 +149,7 @@ src/preinstall:
 
 # Recursive "clean" directory target.
 src/clean: src/CMakeFiles/fileHash_lib.dir/clean
-src/clean: src/CMakeFiles/fileHash_run.dir/clean
+src/clean: src/CMakeFiles/fileHash.dir/clean
 
 .PHONY : src/clean
 
@@ -178,7 +178,7 @@ test/clean: test/CMakeFiles/fileHash_test.dir/clean
 src/CMakeFiles/fileHash_lib.dir/all:
 	$(MAKE) -f src/CMakeFiles/fileHash_lib.dir/build.make src/CMakeFiles/fileHash_lib.dir/depend
 	$(MAKE) -f src/CMakeFiles/fileHash_lib.dir/build.make src/CMakeFiles/fileHash_lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/artem/Рабочий стол/project/test_task/build/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8 "Built target fileHash_lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/artem/Рабочий стол/project/test_task/build/CMakeFiles" --progress-num=9,10,11,12,13,14,15,16 "Built target fileHash_lib"
 .PHONY : src/CMakeFiles/fileHash_lib.dir/all
 
 # Build rule for subdir invocation for target.
@@ -199,31 +199,31 @@ src/CMakeFiles/fileHash_lib.dir/clean:
 .PHONY : src/CMakeFiles/fileHash_lib.dir/clean
 
 #=============================================================================
-# Target rules for target src/CMakeFiles/fileHash_run.dir
+# Target rules for target src/CMakeFiles/fileHash.dir
 
 # All Build rule for target.
-src/CMakeFiles/fileHash_run.dir/all:
-	$(MAKE) -f src/CMakeFiles/fileHash_run.dir/build.make src/CMakeFiles/fileHash_run.dir/depend
-	$(MAKE) -f src/CMakeFiles/fileHash_run.dir/build.make src/CMakeFiles/fileHash_run.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/artem/Рабочий стол/project/test_task/build/CMakeFiles" --progress-num=9,10,11,12,13,14,15,16 "Built target fileHash_run"
-.PHONY : src/CMakeFiles/fileHash_run.dir/all
+src/CMakeFiles/fileHash.dir/all:
+	$(MAKE) -f src/CMakeFiles/fileHash.dir/build.make src/CMakeFiles/fileHash.dir/depend
+	$(MAKE) -f src/CMakeFiles/fileHash.dir/build.make src/CMakeFiles/fileHash.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/artem/Рабочий стол/project/test_task/build/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8 "Built target fileHash"
+.PHONY : src/CMakeFiles/fileHash.dir/all
 
 # Build rule for subdir invocation for target.
-src/CMakeFiles/fileHash_run.dir/rule: cmake_check_build_system
+src/CMakeFiles/fileHash.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/artem/Рабочий стол/project/test_task/build/CMakeFiles" 8
-	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/fileHash_run.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/fileHash.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/artem/Рабочий стол/project/test_task/build/CMakeFiles" 0
-.PHONY : src/CMakeFiles/fileHash_run.dir/rule
+.PHONY : src/CMakeFiles/fileHash.dir/rule
 
 # Convenience name for target.
-fileHash_run: src/CMakeFiles/fileHash_run.dir/rule
+fileHash: src/CMakeFiles/fileHash.dir/rule
 
-.PHONY : fileHash_run
+.PHONY : fileHash
 
 # clean rule for target.
-src/CMakeFiles/fileHash_run.dir/clean:
-	$(MAKE) -f src/CMakeFiles/fileHash_run.dir/build.make src/CMakeFiles/fileHash_run.dir/clean
-.PHONY : src/CMakeFiles/fileHash_run.dir/clean
+src/CMakeFiles/fileHash.dir/clean:
+	$(MAKE) -f src/CMakeFiles/fileHash.dir/build.make src/CMakeFiles/fileHash.dir/clean
+.PHONY : src/CMakeFiles/fileHash.dir/clean
 
 #=============================================================================
 # Target rules for target test/CMakeFiles/fileHash_test.dir

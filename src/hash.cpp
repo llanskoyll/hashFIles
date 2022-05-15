@@ -1,23 +1,5 @@
 #include "hash.h"
 
-
-void createTable(std::vector <unsigned int> &crc_table) {
-
-	unsigned long count = 0;
-
-	for (int i = 0; i < 256; i++)
-	{
-		count = i;
-
-		for (int j = 0; j < 8; j++) {
-			count = count & 1 ? (count >> 1) ^ 0xEDB88320UL : count >> 1;
-		}
-
-		crc_table[i] = count;
-	};
-
-}
-
 void hashCalc(std::vector <fileInfo> &file_vec, const unsigned short int countThread) {
 
 	std::vector <unsigned int> crc_table(256);
@@ -37,6 +19,24 @@ void hashCalc(std::vector <fileInfo> &file_vec, const unsigned short int countTh
 	
 }
 
+void createTable(std::vector <unsigned int> &crc_table) {
+
+	unsigned long count = 0;
+
+	for (int i = 0; i < 256; i++)
+	{
+		count = i;
+
+		for (int j = 0; j < 8; j++) 
+		{
+			count = count & 1 ? (count >> 1) ^ 0xEDB88320UL : count >> 1;
+		}
+
+		crc_table[i] = count;
+	};
+
+}
+
 unsigned int CRC32_function(unsigned char *buf, unsigned long len, const std::vector <unsigned int> &crc_table)
 {
 	unsigned int crc = 0xFFFFFFFFUL;
@@ -50,15 +50,66 @@ unsigned int CRC32_function(unsigned char *buf, unsigned long len, const std::ve
 
 void CRC32_count(fileInfo &file, const std::vector <unsigned int> &crc_table)
 {
-	std::string filename = file.getPath();
+	try 
+	{
+	
+	std::string file_path = file.getPath();
+	std::ifstream fout(file_path,std::ios::binary | std::ios::in);
 
-	char buf[4096*1024]; //сколько символов в файле, на самом деле, это должно быть больше, 2^31-1 будет для файла размером 2ГБ
-	std::ifstream f (filename,std::ios::binary | std::ios::in);
-	// f.read(buf,4096*1024); 4096*1024 - количество извлекаемых символов
-	f.std::istream::seekg(0,std::ios_base::beg); // чтение всего файла с начала
-	f.read(buf,4096*1024);
+	if(!fout.is_open()) { throw "Не удалось открыть файл для подсчета CRC"; }
+
+	const unsigned long max_size_buff = 4096*1024;
+
+	std::streamoff size = 0; // размер файла
+	fout.std::istream::seekg(0,std::ios_base::end);
+	size = fout.std::istream::tellg();
+	
+
+	file.setSize(size);
 
 	unsigned int cnt = 0;
-	cnt = CRC32_function((unsigned char*)buf, f.gcount(), crc_table);
+
+	if(size > max_size_buff)  
+	{	
+		readLargeFile(file_path,max_size_buff,cnt,crc_table);
+
+	} else 
+	{
+		readLightFile(file_path,size,cnt,crc_table);
+	}
+
 	file.setHash(cnt);
+	
+	} catch (const char *ex) {
+		setError(ex);
+	}
 }
+
+void readLargeFile(const std::string &file_path, const unsigned long &max_size_buff, unsigned int &cnt, const std::vector <unsigned int> &crc_table) {
+
+	std::ifstream fout(file_path,std::ios::binary | std::ios::in);
+	
+	if(!fout.is_open()) { throw "Не удалось открыть файл для подсчета CRC"; }
+
+	char buf [max_size_buff];
+	fout.std::ifstream::seekg(0,std::ios_base::beg);
+	fout.read(buf,max_size_buff);
+
+	cnt = CRC32_function((unsigned char*)buf, max_size_buff, crc_table);
+}
+
+
+void readLightFile(const std::string &file_path, const std::streamoff &size, unsigned int &cnt,const std::vector <unsigned int> &crc_table) {
+
+	std::ifstream fout(file_path,std::ios::binary | std::ios::in);
+
+	if(!fout.is_open()) { throw "Не удалось открыть файл для подсчета CRC"; }
+
+	char buf [size];  
+	fout.std::istream::seekg(0,std::ios_base::beg);
+	fout.read(buf,size);
+
+	cnt = CRC32_function((unsigned char*)buf, fout.gcount(), crc_table);	
+}
+
+	

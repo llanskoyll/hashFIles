@@ -1,0 +1,1 @@
+/usr/bin/c++  -fopenmp -lbenchmark -std=c++14 -pthread   CMakeFiles/fileHash.dir/error.cpp.o CMakeFiles/fileHash.dir/fileInfo.cpp.o CMakeFiles/fileHash.dir/hash.cpp.o CMakeFiles/fileHash.dir/jsonReader.cpp.o CMakeFiles/fileHash.dir/main.cpp.o CMakeFiles/fileHash.dir/print.cpp.o CMakeFiles/fileHash.dir/stringFunction.cpp.o  -o fileHash  /usr/local/lib/libbenchmark.a -pthread -lrt 

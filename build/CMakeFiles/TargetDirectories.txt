@@ -5,13 +5,13 @@
 /home/artem/Рабочий стол/project/test_task/build/CMakeFiles/rebuild_cache.dir
 /home/artem/Рабочий стол/project/test_task/build/CMakeFiles/edit_cache.dir
 /home/artem/Рабочий стол/project/test_task/build/src/CMakeFiles/install/strip.dir
-/home/artem/Рабочий стол/project/test_task/build/src/CMakeFiles/install/local.dir
 /home/artem/Рабочий стол/project/test_task/build/src/CMakeFiles/install.dir
 /home/artem/Рабочий стол/project/test_task/build/src/CMakeFiles/list_install_components.dir
 /home/artem/Рабочий стол/project/test_task/build/src/CMakeFiles/rebuild_cache.dir
 /home/artem/Рабочий стол/project/test_task/build/src/CMakeFiles/edit_cache.dir
 /home/artem/Рабочий стол/project/test_task/build/src/CMakeFiles/fileHash_lib.dir
-/home/artem/Рабочий стол/project/test_task/build/src/CMakeFiles/fileHash_run.dir
+/home/artem/Рабочий стол/project/test_task/build/src/CMakeFiles/install/local.dir
+/home/artem/Рабочий стол/project/test_task/build/src/CMakeFiles/fileHash.dir
 /home/artem/Рабочий стол/project/test_task/build/test/CMakeFiles/install/strip.dir
 /home/artem/Рабочий стол/project/test_task/build/test/CMakeFiles/install/local.dir
 /home/artem/Рабочий стол/project/test_task/build/test/CMakeFiles/install.dir
