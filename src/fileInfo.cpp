@@ -5,16 +5,13 @@ fileInfo::fileInfo(std::string name, std::string path) {
   _path = path;
 }
 
-void fileInfo::setHash(unsigned int &hash) {
+void fileInfo::setHash(unsigned long &hash) {
   _hash = hash;
 }
 void fileInfo::setThread(unsigned int &thread) {
   _thread = thread;
 }
 
-void fileInfo::setSize(std::streamoff &size) {
-    _size = (size)/(1024*1024);
-}
 
 std::string fileInfo::getName() {
   return _name;
@@ -22,13 +19,9 @@ std::string fileInfo::getName() {
 std::string fileInfo::getPath() {
   return _path;
 }
-unsigned int fileInfo::getHash() {
+unsigned long fileInfo::getHash() {
   return _hash;
 }
 unsigned int fileInfo::getThread() {
   return _thread;
-}
-
-unsigned int fileInfo::getSize() {
-  return _size;
 }
